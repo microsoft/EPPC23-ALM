@@ -1,28 +1,36 @@
-# Project
+# European Power Platform Conference 2023 - Low Code Application Lifecycle Management (ALM) Workshop
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+In this workshop, you will learn how to apply Application Lifecycle Management in a low code world. You will learn multiple best practices during this workshop. This workshop consists of multiple labs:
 
-As the maintainer of this project, please make a few updates:
+## Lab 01 - Tenant setup
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+In this lab, you will login to the account you are going to use during the workshop and you will create developer environments. You will also setup a GitHub account and a codespace.
 
-## Contributing
+[Lab 01 - Tenant Setup](./lab-01/readme.md)
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+## Lab 02 - Work with solutions
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+In lab 02, you will learn about how to work with solutions. You will learn how to import a solution and how to export and unpack a solution. Then, you will inspect the solution to see what the structure of the solution is. After that, you will learn how to do the export and unpack more easily by cloning a solution.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+[Lab 02 - Work with Solutions](./lab-02/readme.md)
+
+## Lab 03 - Work with solutions with a team
+
+Now that you experienced how to work with solutions by yourself, let's also look at how to work together on solutions. How do you co-author a solution together with other developers? How does this work with developer environments?
+
+[Lab 03 - Work with solutions with a team](./lab-03/README.md)
+
+## Lab 04 - Deploy the solution to test and production
+
+You will learn how to deploy the solution that we created to a different environment using pipelines for Power Platform in lab 04. This will include the setup of pipelines for Power Platform, how to create a pipeline & how to deploy a pipeline using it.
+
+[Lab 04 - Deploy the solution to test and production](./lab-04/README.md)
+
+## Lab 05 - Add an approval before deploying to production
+
+You will learn how to setup an approval so that you can ask someone to approve a deployment to production.
+
+[Lab 05 - Add an approval before deploying to production](./lab-05/README.md)
 
 ## Trademarks
 
