@@ -35,7 +35,7 @@ In this task, you will act like you're a colleague who wants to change the Mixed
           
     ![](./assets/add-screen-add-new-screen.png)
           
-1. In the tree view on the left scroll down until you see **Screen1**, select the **elipsis** next to it, and select **Rename**
+1. In the tree view on the left scroll down until you see **Screen1**, select the **elipsis** next to it, select **Rename**, and rename it to `Tutorial Screen`
   
     ![](./assets/add-screen-rename-new-screen.png)
   
@@ -48,9 +48,16 @@ In this task, you will act like you're a colleague who wants to change the Mixed
     ![](./assets/add-screen-rightclick-paste.png)
   
 1. Position the button below the others, add the following formula (yes, this is an incorrect formula, but you will learn why later in this lab) for the **OnSelect** property in the formula bar:  
-    `Navigate('Tutorial Screen', ScreenTransition.Fade`  
+
+    ```
+    Navigate('Tutorial Screen', ScreenTransition.Fade
+    ```  
+    
     Change the **text** property on the right to:  
-    `Tutorial Screen`
+    
+    ```
+    Tutorial Screen
+    ```
       
     ![](./assets/add-screen-change-button-props.png)
           
@@ -58,7 +65,7 @@ In this task, you will act like you're a colleague who wants to change the Mixed
   
     ![](./assets/add-screen-rename-button.png)
   
-1. Save the app and publish it
+1. Select the publish icon (this will save and publish the app)
   
     ![](./assets/add-screen-save-publish.png)
   
@@ -68,11 +75,11 @@ In this task, you will act like you're a colleague who wants to change the Mixed
   
 1. Select back to go back to the solution
   
-        ![](./assets/add-screen-back.png)
+    ![](./assets/add-screen-back.png)
   
 1. Confirm that you want to leave the app
   
-        ![](./assets/add-screen-leave-app.png)
+    ![](./assets/add-screen-leave-app.png)
   
 These were all the changes you had to do for the MR app. Let's move onto the next task.
 
@@ -110,23 +117,46 @@ In task 03, you will learn how to sync the latest changes back to your Codespace
   
 1. Change your directory to the directory where you cloned the solution to by running the following command in your terminal:  
   
-    `cd assets/export/MixedRealityWorkshop/`  
+    ```
+    cd assets/export/MixedRealityWorkshop/
+    ```  
       
     ![](./assets/sync-change-directory.png)
 1. Now, we are in the right directory to sync the latest changes. Run the following command in your terminal to get the latest changes:  
   
-    `pac solution sync --processCanvasApps`  
+    ```
+    pac solution sync --processCanvasApps
+    ```  
+    
+    > **Command Explanation:** 
+    >
+    > ```pac solution sync``` is the command that we are using to sync the latest version (that we just published in the maker portal) of the solution that we cloned in an earlier stage.
+    >
+    > ```--processCanvasApps``` is the parameter that we use to unpack the canvas apps in the solution.
+    > 
+    > Notice that you don't have to add the solution name now. The Power Platform CLI is smart enough to get that from the current directory
   
-    Notice that you don't have to add the solution name now. The Power Platform CLI is smart enough to get that from the current directory
 1. Next, you will see a lot of changes in the source control section again, select the `source control` icon in the left menu, select the `Overview screen.fx.yaml` file and you will be able to see all the changes that we made to that screen. Feel free to check out the other files that changed  
   
     ![](./assets/sync-changes-to-overview-screen.png)
 
 1. It's time to pack your synced solution. Run the following command in your terminal to pack your solution to a managed solution:
   
-    `pac solution pack --folder ./src/ --zipfile ../Packed_MR_Solution.zip --packagetype Managed --processCanvasApps`  
+    ```
+    pac solution pack --folder ./src/ --zipfile ../Packed_MR_Solution.zip --packagetype Managed --processCanvasApps
+    ```  
       
-    This command will both pack the unpacked canvas app as well as the solution, so it will create a new file (the solution zip file) and update a file (the packed canvas app - msapp)
+    > **Command Explanation:** 
+    >
+    > ```pac solution pack``` is the command that we are using to pack the solution we just synced.
+    >
+    > ```--folder ./src/``` is to point at the src folder that contains the solution.
+    > 
+    > ```--zipfile ../Packed_MR_Solution.zip``` is the path and the filename of the zip-file we want to generate of the solution.
+    >
+    > ```--packagetype Managed``` is to make sure we are packing a managed solution.
+    > 
+    > ```--processCanvasApps``` is the parameter that we use to indicate that we also want to pack the unpacked canvas apps in the unpacked solution folder.
   
 This file was needed as a prerequisite for task 04. Let's move on to the next task.
 
@@ -138,9 +168,19 @@ Before you commit the changes, you of course want to make sure there are no crit
   
 1. Run the following command in the terminal:
   
-    `pac solution check --path ../Packed_MR_Solution.zip --outputDirectory ../checker-reports --geo Europe`
-  
-    This command uses the `--path` parameter to point to the zip file you just generated at the end of the previous task, the `--outputDirectory` parameter points to the directory where you want to save the results and last but not least, the `--geo` parameter shows against which region the checker should check.
+    ```
+    pac solution check --path ../Packed_MR_Solution.zip --outputDirectory ../checker-reports --geo Europe
+    ```
+    
+    > **Command Explanation:** 
+    >
+    > ```pac solution check``` is the command that we are using to check the solution for errors.
+    >
+    > ```--path ../Packed_MR_Solution.zip``` is to point at the path of the solution we just packed.
+    > 
+    > ```--outputDirectory ../checker-reports``` is to make sure the outputs get saved to the `checker-reports` directory one level higher of the current directory.
+    >
+    > ```--geo Europe``` is to select the geography of the solution checker API. Europe is closest in this case.
   
 1. The results will show up in the terminal after a while
   
@@ -171,6 +211,14 @@ Before you commit the changes, you of course want to make sure there are no crit
 1. Now, only the errors will show. And we can see there are issues with the formulas in our canvas app
   
     ![](./assets/checker-sarif-error.png)
+
+The SARIF-viewer tells us that we can review the issues in design mode of the app. We won't do that now, but these issues can be found by selecting the **App checker** icon, and selecting the **chevron ＞** next to Formulas.
+
+![](./assets/checker-app-checker-formulas.png)
+
+Next you will see the explanation of the errors in the sidebar.
+
+![](./assets/checker-app-formula-errors.png)
 
 This task ends here, you won't have to fix all the errors. You know how this can be done and how you can read the SARIF-file.
 

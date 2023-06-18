@@ -2,15 +2,16 @@
 
 In this lab, you will go through the following tasks:
 
-* Uploading assets to OneDrive
-* Importing a solution zip file
-* Exporting a solution from a Power Platform environment
-* Unpacking the exported solution
-* Cloning a solution
-* Inspecting the solution folders
-* Reviewing the solution in the Power Apps Maker Portal
+* Upload assets to OneDrive
+* Import a solution zip file
+* Export a solution from an environment
+* Unpack the exported solution
+* Clone a solution from an environment
+* Commit Changes
+* Review export/unpack folder vs clone folder
+* Review solution on the Maker Portal
 
-## Task 1: Uploading assets to OneDrive
+## Task 1: Upload assets to OneDrive
 
 In this task, you will be uploading a couple of assets to your OneDrive. The solution we will be working with later uses **OneDrive for Business** as a connector to retrieve files and images and their respective information directly from OneDrive to be used in a Canvas App.
 
@@ -195,12 +196,14 @@ There are two main folders here. The **Unpacked_MR_solution** folder which was c
 
 | **MixedRealityWorkshop** | **Unpacked_MR_solution** | Explanation |
 |--------------|-----------|------------|
-| ![Clone](assets/cloned-difference-1.png) | ![Unpack](assets/unpack-difference-1.png) | TODO Daniel  |
-| ![Clone](assets/clone-canvas.png) | ![Unpack](assets/unpack-canvas.png)  | TODO Daniel |
-| ![Clone](assets/connectors-folder.png) | ![Unpack](assets/connectors-folder.png)  | TODO Daniel |
-| ![Clone](assets/other-folder.png) | ![Unpack](assets/other-folder.png)  | TODO Daniel |
+| ![Clone](assets/cloned-difference-1.png) | ![Unpack](assets/unpack-difference-1.png) | The difference in this case is that the `MixedRealityWorkshop` directory contains a `src` directory, a `.gitignore` file and a `.cdsproj` file, the unpacked version only has the contents of the `src` directory.  |
+| ![Clone](assets/clone-canvas.png) | ![Unpack](assets/unpack-canvas.png)  | You used the `--processCanvasApps` parameter with the `pac solution clone` command. This led to the unpacking of the canvas app, while in the export and unpack you didn't use the `--processCanvasApps` parameter, and left the `msapp` file packed. |
+| ![Clone](assets/connectors-folder.png) | ![Unpack](assets/connectors-folder.png)  | For the `Connectors` directory, there is no difference between the two methods. |
+| ![Clone](assets/other-folder.png) | ![Unpack](assets/other-folder.png)  | For the `Other` directory, there is no difference between the two methods. |
 
-TODO Daniel: Closing statement
+In short, you can achieve almost the same things with the separate commands as with the clone command. It all depends on which parameters you add and what input you give.
+
+> To learn more about all the parameters you can add to all the different commands in the `pac solution` command group, make sure to check out the [documentation](https://aka.ms/pac/solution).
 
 ## Task 8: Review solution on the Maker Portal
 
@@ -294,7 +297,36 @@ Now that we know about the ins and outs of a solution, including how to interact
 
     ![Coral 3D object](assets/coral-3d-object.png)
 
-Now you know the app works in the **Dev** Environment. Let's go ahead and learn about how to work with multiple people on a solution!
+    With the app working as expected - let's go ahead and **Save** and **Publish** the app.
+
+19. Close the app preview by clicking on the **X** in the top right-hand corner of the screen
+
+    ![Close app preview](assets/close-app-preview.png)
+
+20. Go ahead and **Save** the app by clicking on the **Save** button in the top right-hand corner of the screen. Once the app has been saved, click on the **Publish** button in the top right-hand corner of the screen as well. 
+
+    ![Save app](assets/save-and-publish-app.png)
+
+21. Once the **Publish** dialog box appears, click **Publish this version** to publish the app to the **Dev** environment.
+
+    ![Publish app](assets/publish-app.png)
+
+    The app is now published to the environment and can be used by anyone who has access to the it.
+
+22. Now that the ```Mixed Reality App``` is published - exit the app by clicking the **Back** button in the top left-hand corner of the screen
+
+    ![Back button](assets/back-button.png)
+
+23. A popup dialog will appear asking you to confirm if you want to leave the app. Select **Leave**
+
+    ![Leave app](assets/leave-app.png)
+
+    You will then be redirected back to the **Mixed Reality Workshop** solution view.
+
+    ![Mixed Reality Workshop solution](assets/back-to-solution.png)
+
+
+Now that you know that the app works in the **Dev** Environment and that the latest version has been published - Let's go ahead and learn about how to work with multiple people on a solution!
 
 ## Next lab
 
