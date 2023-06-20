@@ -76,7 +76,7 @@
         Source: =galCoralGallery.Selected.'3DModel'
         TextColor: =RGBA(255, 255, 255, 1)
         Width: =280
-        X: =179
-        Y: =1037
+        X: =180
+        Y: =1026
         ZIndex: =6
 
