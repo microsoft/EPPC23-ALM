@@ -1,0 +1,70 @@
+"'Smithsonian 3D Search Screen' As screen":
+
+    lblSearchTitle As label:
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =160
+        Size: =44
+        Text: ="Smithsonian 3D Search"
+        Width: =600
+        X: =21
+        Y: =18
+        ZIndex: =1
+
+    divSearch As rectangle:
+        Fill: |-
+            =ColorValue("#FA7E01")
+        Height: =4
+        Width: =601
+        X: =18
+        Y: =190
+        ZIndex: =2
+
+    icoSearchHome As icon.Home:
+        Color: =Color.Black
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Overview Screen', ScreenTransition.Fade)
+        X: =555
+        Y: =47
+        ZIndex: =3
+
+    sbSmithsonian As SearchBox:
+        Height: =40
+        Width: =601
+        X: =19
+        Y: =220
+        ZIndex: =4
+
+    galSearch As gallery.galleryVertical:
+        Height: =866 
+        Items: |-
+            =Filter(Smithsonian3D.FileSearch({q: sbSmithsonian.SearchText, start: 0, rows: 100, quality: "High", file_type: "glb"}).rows, ThisRecord.content.quality = "High", ThisRecord.content.file_type = "glb", !IsBlank(ThisRecord.title))
+        Layout: =Layout.Vertical
+        TemplateSize: =60
+        Y: =270
+        ZIndex: =5
+
+        lblSearchObjectTitle As label:
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =60
+            OnSelect: =Select(Parent)
+            Size: =18
+            Text: =ThisItem.title
+            Width: =540
+            X: =15
+            ZIndex: =1
+
+        icoSearchView As icon.View:
+            FocusedBorderThickness: =0
+            Height: =60
+            Icon: =Icon.View
+            OnSelect: =Select(Parent) && Navigate('Smithsonian 3D Viewer Screen', ScreenTransition.Fade)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =60
+            X: =550
+            ZIndex: =2
+
