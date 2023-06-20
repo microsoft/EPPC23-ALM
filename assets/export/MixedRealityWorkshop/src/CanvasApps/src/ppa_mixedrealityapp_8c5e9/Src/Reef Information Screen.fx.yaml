@@ -46,7 +46,7 @@
         Y: =732
         ZIndex: =4
 
-    "'3dReef' As 'View in 3D (preview)'.pcfdataset":
+    "'3dReef' As 'Wyświetl w formacie 3D (wersja zapoznawcza)'.pcfdataset":
         BackgroundFill: =Color.Transparent
         DisplayMode: =DisplayMode.Edit
         Height: =536
@@ -56,7 +56,7 @@
         Y: =95
         ZIndex: =5
 
-    "mrReef As 'View in MR (preview)'.pcfdataset":
+    "mrReef As 'Wyświetl w rzeczywistości mieszanej (wersja zapoznawcza)'.pcfdataset":
         BorderFillColor: =RGBA(47, 81, 151, 1)
         BorderRadius: =50
         BorderThickness: =0

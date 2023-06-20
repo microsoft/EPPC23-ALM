@@ -27,20 +27,34 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "Button": {
+  "circle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
+    "Id": "http://microsoft.com/appmagic/shapes/circle",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "circle",
+    "OverridableProperties": {},
+    "Version": "2.3.0"
+  },
+  "Etykieta": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Label",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": true,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_Button",
+    "Name": "Microsoft_CoreControls_Label",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Button",
-    "Version": "1.5.2"
+    "TemplateDisplayName": "Etykieta",
+    "Version": "1.6.0"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -155,20 +169,20 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
-  "Label": {
+  "Przycisk": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Label",
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_Button",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
     "IsPcfControl": true,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "Microsoft_CoreControls_Label",
+    "Name": "Microsoft_CoreControls_Button",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Label",
-    "Version": "1.6.0"
+    "TemplateDisplayName": "Przycisk",
+    "Version": "1.5.2"
   },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
@@ -212,7 +226,7 @@
     "OverridableProperties": {},
     "Version": "2.3.2"
   },
-  "View in 3D (preview)": {
+  "Wyświetl w formacie 3D (wersja zapoznawcza)": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/powercontrol/ViewIn3D",
@@ -224,10 +238,10 @@
     "LastModifiedTimestamp": "0",
     "Name": "ViewIn3D",
     "OverridableProperties": {},
-    "TemplateDisplayName": "View in 3D (preview)",
+    "TemplateDisplayName": "Wyświetl w formacie 3D (wersja zapoznawcza)",
     "Version": "1.2.22"
   },
-  "View in MR (preview)": {
+  "Wyświetl w rzeczywistości mieszanej (wersja zapoznawcza)": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/powercontrol/ViewInMR",
@@ -274,7 +288,7 @@
         "PCFSkipValidation": false
       }
     },
-    "TemplateDisplayName": "View in MR (preview)",
+    "TemplateDisplayName": "Wyświetl w rzeczywistości mieszanej (wersja zapoznawcza)",
     "Version": "1.0.29"
   }
 }
