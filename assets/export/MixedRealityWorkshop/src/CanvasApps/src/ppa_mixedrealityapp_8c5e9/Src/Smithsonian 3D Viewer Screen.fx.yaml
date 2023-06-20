@@ -1,0 +1,48 @@
+"'Smithsonian 3D Viewer Screen' As screen":
+
+    ico3DViewerBackArrow As icon.BackArrow:
+        Color: |-
+            =ColorValue("#FA7E01")
+        Height: =47
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Smithsonian 3D Search Screen', ScreenTransition.Fade)
+        Width: =47
+        X: =20
+        Y: =36
+        ZIndex: =1
+
+    lbl3DViewerTitle As label:
+        Align: =Align.Center
+        Color: |-
+            =ColorValue("#066563")
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =40
+        Text: ="Smithsonian 3D"
+        Width: =443
+        X: =105
+        Y: =24
+        ZIndex: =2
+
+    lbl3DViewerObjectTitle As label:
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =80
+        Size: =25
+        Text: =galSearch.Selected.title
+        Width: =588
+        X: =25
+        Y: =694
+        ZIndex: =3
+
+    "'3dSmithsonianViewer' As 'View in 3D (preview)'.pcfdataset":
+        BackgroundFill: =Color.Transparent
+        DisplayMode: =DisplayMode.Edit
+        Height: =536
+        Source: =galSearch.Selected.content.uri
+        Width: =561
+        X: =40
+        Y: =95
+        ZIndex: =5
+
