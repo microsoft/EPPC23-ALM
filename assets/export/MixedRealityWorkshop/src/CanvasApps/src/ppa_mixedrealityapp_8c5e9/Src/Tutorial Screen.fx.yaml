@@ -1,0 +1,87 @@
+"'Tutorial Screen' As screen.'phoneLayout_Tutorial_ver3.0'":
+
+    TutorialNavigator1 As gallery.TutorialGalleryHorizontal:
+        AccessibleLabel: ="Layouts_Tutorial_Gallery_Accessible_Text"
+        Height: =85
+        Items: |-
+            =Table(           
+             {Step: 0, Text:"Create a tutorial to show people how to use your app.", Image: SampleImage},           
+             {Step: 1, Text:"Customize your text from the formula bar. Open the formula bar by selecting the screen indicator dots.", Image: SampleImage},           
+             {Step: 2, Text:"Use screenshots of your app to highlight features and show its interface.", Image: SampleImage},           
+             {Step: 3, Text:"Your tutorial screens start with zero in the formula. Leave it at zero so your tutorial advances correctly.", Image: SampleImage}
+            )
+        ShowScrollbar: =false
+        TemplatePadding: =8
+        TemplateSize: =25
+        Width: =CountRows(Self.AllItems) * (Self.TemplateWidth + Self.TemplatePadding) + 8
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =1051
+        ZIndex: =1
+
+        Circle1 As circle:
+            BorderThickness: =2
+            Fill: =If(Or(ThisItem.Step = 0 && IsBlank(_guideStep), ThisItem.Step = _guideStep), iconPrev1.Color, RGBA(0,0,0,0))
+            FocusedBorderThickness: =4
+            Height: =Circle1.Width
+            OnSelect: =Set(_guideStep, ThisItem.Step)
+            TabIndex: =0
+            Width: =Parent.TemplateWidth - 5
+            X: =Parent.TemplateWidth/2 - Self.Width/2
+            Y: =Parent.TemplateHeight/2 - Self.Height/2
+            ZIndex: =1
+
+    TutorialImage1 As image:
+        AccessibleLabel: ="Layouts_Tutorial_Image_Accessible_Text"
+        Height: =450
+        Image: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Image, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Image)
+        Width: =Parent.Width
+        Y: =50
+        ZIndex: =2
+
+    TutorialText1 As label:
+        Align: =Align.Center
+        Height: =270
+        LineHeight: =1.3
+        PaddingLeft: =20
+        PaddingRight: =20
+        Size: =20
+        Text: =If(IsBlank(_guideStep), First(TutorialNavigator1.AllItems).Text, LookUp(TutorialNavigator1.AllItems, Step = _guideStep).Text)
+        Width: =420
+        X: =(Parent.Width - Self.Width)/2
+        Y: =650
+        ZIndex: =3
+
+    iconPrev1 As icon.ChevronLeft:
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Set(_guideStep, Max(_guideStep-1, First(TutorialNavigator1.AllItems).Step))
+        TabIndex: =0
+        Tooltip: ="Previous step"
+        Visible: =_guideStep > 0
+        X: =TutorialText1.X - iconPrev1.Width
+        Y: =TutorialText1.Y + TutorialText1.Height / 2 - Self.Height/2
+        ZIndex: =4
+
+    iconNext1 As icon.ChevronRight:
+        Icon: =Icon.ChevronRight
+        OnSelect: =Set(_guideStep, Min(_guideStep+1, Last(TutorialNavigator1.AllItems).Step))
+        TabIndex: =0
+        Tooltip: ="Next step"
+        Visible: =Last(TutorialNavigator1.AllItems).Step > _guideStep
+        X: =TutorialText1.X + TutorialText1.Width
+        Y: =iconPrev1.Y
+        ZIndex: =5
+
+    LabelSkip1 As label:
+        Align: =Align.Center
+        BorderColor: =Self.Color
+        FocusedBorderThickness: =2
+        Height: =55
+        OnSelect: =Set(_guideStep, Last(TutorialNavigator1.AllItems).Step)
+        Size: =16
+        TabIndex: =0
+        Text: ="Skip"
+        Width: =100
+        X: =Parent.Width - Self.Width
+        Y: =Parent.Height - Self.Height
+        ZIndex: =6
+
