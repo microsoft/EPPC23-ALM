@@ -125,7 +125,11 @@ The Creator Kit is not available out of the box, so we will need to install it i
 
 1. With the Power Platform Admin Center still open, click on the **Dev** environment to open it
 
+    ![Click on Dev Environment to open](assets/click-on-dev-env.png)
+
 2. Select **Resources** from the top navigation bar and then select **Dynamics 365 apps**
+
+    ![Resources and D365](assets/resources-and-d365.png)
 
 3. Click on the **Install app** button on the top navigation bar
 
