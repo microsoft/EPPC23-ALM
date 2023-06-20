@@ -269,17 +269,21 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
 
     ![Screenshot of pac org list](assets/org-list.png)
 
-10. Then in the terminal, type the following command and then press **Enter**:
+10. Take note of the Environment ID of the **Dev** Environment and copy it. 
+
+    ![Copy of Dev environment ID](assets/org-list-with-env-id.png)
+
+11. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```00000000-0000-0000-0000-000000000000``` with the environment id that you copied above
 
     ```bash
-    pac org select --environment Dev
+    pac org select --environment 00000000-0000-0000-0000-000000000000
     ```
 
     You should then see confirmation that you have successfully selected the **Dev** org for the current auth profile.
 
     ![Screenshot of pac org select confirmation](assets/org-select.png)
 
-11. To have further confirmation that you have successfully connected to the **Dev** environment, in the terminal type the following command and then press **Enter**:
+12. To have further confirmation that you have successfully connected to the **Dev** environment, in the terminal type the following command and then press **Enter**:
 
     ```bash
     pac org who
