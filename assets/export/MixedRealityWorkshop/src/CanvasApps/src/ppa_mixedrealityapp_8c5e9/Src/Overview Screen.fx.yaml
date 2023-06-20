@@ -19,7 +19,7 @@
         Height: =70
         HoverFill: |-
             =ColorValue("#FA7E01")
-        OnSelect: =Navigate('Galleries Screen', ScreenTransition.Fade)
+        OnSelect: =Navigate('Galleries Screen', ScreenTransition.Fade) 
         PaddingLeft: =10
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -60,4 +60,24 @@
         X: =20
         Y: =280
         ZIndex: =4
+
+    btnTutorial As button:
+        BorderThickness: =0
+        Fill: |-
+            =ColorValue("#066563")
+        Font: =Font.Lato
+        Height: =70
+        HoverFill: |-
+            =ColorValue("#FA7E01")
+        OnSelect: =Navigate('Tutorial Screen', ScreenTransition.Fade
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: ="Tutorial Screen"
+        Width: =601
+        X: =18
+        Y: =363
+        ZIndex: =5
 

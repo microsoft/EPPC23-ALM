@@ -117,7 +117,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Mixed Reality App",
     "OriginatingVersion": "1.326",
-    "ParserErrorCount": 0
+    "ParserErrorCount": 1
   },
   "PublishInfo": {
     "AppName": "Mixed Reality App",
@@ -136,6 +136,7 @@
     "Coral Information Screen",
     "Reef Information Screen",
     "Smithsonian 3D Search Screen",
-    "Smithsonian 3D Viewer Screen"
+    "Smithsonian 3D Viewer Screen",
+    "Tutorial Screen"
   ]
 }
