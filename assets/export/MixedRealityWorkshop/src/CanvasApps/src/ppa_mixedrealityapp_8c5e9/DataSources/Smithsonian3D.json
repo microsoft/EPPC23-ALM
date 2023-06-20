@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_ppa-5fsmithsonian-203d-5fa201f66043ff49d9",
+    "Name": "Smithsonian3D",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

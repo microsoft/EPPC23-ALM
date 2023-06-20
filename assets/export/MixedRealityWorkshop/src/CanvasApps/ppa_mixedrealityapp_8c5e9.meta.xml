@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ppa_mixedrealityapp_8c5e9</Name>
+  <AppVersion>2023-06-20T08:40:40Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.23061.21.0</CreatedByClientVersion>
+  <MinClientVersion>3.23061.21.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.23061.21","minimumRequiredApiVersion":"2.2.0","hasComponent":"true","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20220912T152729Z-3.22085.14.0"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Mixed Reality App</DisplayName>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"003c10bb-0e9a-4c4b-805d-593afc9cb727":{"id":"/providers/Microsoft.PowerApps/apis/shared_ppa-5fsmithsonian-203d-5fe6fa22c5f7d207de","displayName":"Smithsonian 3D","iconUri":"https://pafeblobprodam.blob.core.windows.net/20230620t000000zc57ae63fcbad49caa7f927c62a4f67e3/ppa_5Fsmithsonian-203d_iconblob.Png?sv=2018-03-28&amp;sr=c&amp;sig=tPhmlrljrPnCClDfGyayj55pOZUHnCZEsB7oBlPEwvo%3D&amp;se=2023-06-25T20%3A00%3A00Z&amp;sp=rl","dataSources":["Smithsonian3D"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["FileSearch"],"customApiLogicalName":"ppa_5Fsmithsonian-203d","isCustomApiSolutionAware":true},"9e9a9b94-4038-4436-b843-b6897f60cb06":{"id":"/providers/microsoft.powerapps/apis/shared_excel","displayName":"Excel","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/excel/icon.png","dataSources":["Coral","Occupants"],"dependencies":["501594da-897b-4442-bfaf-f5c42ba55b97"],"dependents":[],"parameterHints":{"501594da-897b-4442-bfaf-f5c42ba55b97":{"value":"fileSource"}},"parameterHintsV2":{"fileSource":{"value":"501594da-897b-4442-bfaf-f5c42ba55b97"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"b!F5trxW5DUkCAZ2g93lUQ_8AM_RIfwEVDvKG0m-nFD32BUd0ftpqNSYXR1d6LoHJi.01SRHTBBKZO5ZJE7GQZJDI4DVGPFBM55MR":{"dataSources":{"Coral":{"tableName":"Coral"},"Occupants":{"tableName":"Occupants"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"],"isCustomApiSolutionAware":false},"501594da-897b-4442-bfaf-f5c42ba55b97":{"id":"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness","displayName":"OneDrive for Business","iconUri":"https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png","dataSources":[],"dependencies":[],"dependents":["9e9a9b94-4038-4436-b843-b6897f60cb06"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","isCustomApiSolutionAware":false}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"componenttype":372,"logicalname":"ppa_5Fsmithsonian-203d","componenttypeplatformname":"connector"},{"componenttype":300,"logicalname":"cat_powercatcomponentlibrary_0be3a","componenttypeplatformname":"CanvasApp"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/ppa_mixedrealityapp_8c5e9_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/ppa_mixedrealityapp_8c5e9_DocumentUri.msapp</DocumentUri>
+</CanvasApp>
