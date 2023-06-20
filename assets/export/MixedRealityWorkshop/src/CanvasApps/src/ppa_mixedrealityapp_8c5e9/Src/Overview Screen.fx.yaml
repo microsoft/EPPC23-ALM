@@ -1,0 +1,63 @@
+"'Overview Screen' As screen":
+
+    lblOverviewTitle As label:
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =160
+        Size: =44
+        Text: ="Mixed Reality Workshop"
+        Width: =600
+        X: =21
+        Y: =18
+        ZIndex: =1
+
+    btnOverviewCoral As button:
+        BorderThickness: =0
+        Fill: |-
+            =ColorValue("#066563")
+        Font: =Font.Lato
+        Height: =70
+        HoverFill: |-
+            =ColorValue("#FA7E01")
+        OnSelect: =Navigate('Galleries Screen', ScreenTransition.Fade)
+        PaddingLeft: =10
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: ="Corals and Coral Reefs"
+        Width: =601
+        X: =20
+        Y: =200
+        ZIndex: =2
+
+    divOverview As rectangle:
+        Fill: |-
+            =ColorValue("#FA7E01")
+        Height: =4
+        Width: =601
+        X: =18
+        Y: =190
+        ZIndex: =3
+
+    btn3DSearch As button:
+        BorderThickness: =0
+        Fill: |-
+            =ColorValue("#066563")
+        Font: =Font.Lato
+        Height: =70
+        HoverFill: |-
+            =ColorValue("#FA7E01")
+        OnSelect: =Navigate('Smithsonian 3D Search Screen', ScreenTransition.Fade)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: ="Smithsonian 3D Search"
+        Width: =601
+        X: =20
+        Y: =280
+        ZIndex: =4
+
