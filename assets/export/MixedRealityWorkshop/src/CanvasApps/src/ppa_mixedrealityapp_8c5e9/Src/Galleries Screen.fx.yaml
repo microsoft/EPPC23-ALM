@@ -1,0 +1,150 @@
+"'Galleries Screen' As screen":
+
+    lblCollectionTitle As label:
+        Color: =Color.Black
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =123
+        Size: =44
+        Text: ="Corals and Coral Reefs"
+        Width: =600
+        X: =21
+        Y: =18
+        ZIndex: =1
+
+    lblCollectionSub As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =16
+        Text: ="Discover the collection"
+        Width: =560
+        X: =21
+        Y: =141
+        ZIndex: =2
+
+    divCoral As rectangle:
+        Fill: |-
+            =ColorValue("#FA7E01")
+        Height: =4
+        Width: =601
+        X: =18
+        Y: =190
+        ZIndex: =3
+
+    btnCoralHeading As button:
+        BorderThickness: =0
+        DisplayMode: =DisplayMode.View
+        Fill: |-
+            =ColorValue("#066563")
+        Font: =Font.Lato
+        Height: =70
+        PaddingLeft: =10
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: ="Coral"
+        Width: =601
+        X: =20
+        Y: =200
+        ZIndex: =4
+
+    lblCoralSub As label:
+        Height: =70
+        Size: =18
+        Text: ="Explore a variety of coral species collected from around the world."
+        Width: =601
+        X: =20
+        Y: =270
+        ZIndex: =5
+
+    galCoralGallery As gallery.galleryHorizontal:
+        Height: =357
+        Items: =Coral
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Width: =601
+        X: =19
+        Y: =295
+        ZIndex: =6
+
+        imgCoral As image:
+            Height: =288
+            Image: =ThisItem.Picture
+            OnSelect: =Navigate('Coral Information Screen', ScreenTransition.Fade)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =290
+            Y: =48
+            ZIndex: =1
+
+    divReef As rectangle:
+        Fill: |-
+            =ColorValue("#FA7E01")
+        Height: =4
+        Width: =601
+        X: =18
+        Y: =652
+        ZIndex: =7
+
+    btnReefHeading As button:
+        BorderThickness: =0
+        DisplayMode: =DisplayMode.View
+        Fill: |-
+            =ColorValue("#066563")
+        Font: =Font.Lato
+        Height: =70
+        PaddingLeft: =10
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: |-
+            ="Reef Occupants
+            "
+        Width: =601
+        X: =20
+        Y: =662
+        ZIndex: =8
+
+    lblReefSub As label:
+        Height: =70
+        Size: =18
+        Text: ="Learn more about the animals who inhabit coral and coral reefs."
+        Width: =601
+        X: =21
+        Y: =738
+        ZIndex: =9
+
+    galReefOccupants As gallery.galleryHorizontal:
+        Height: =357
+        Items: =Occupants
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Width: =601
+        X: =20
+        Y: =779
+        ZIndex: =10
+
+        imgReefOccupants As image:
+            Height: =288
+            Image: =ThisItem.Picture
+            OnSelect: =Navigate('Reef Information Screen', ScreenTransition.Fade)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =290
+            Y: =48
+            ZIndex: =1
+
+    icoGalleriesHome As icon.Home:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Overview Screen', ScreenTransition.Fade)
+        X: =555
+        Y: =47
+        ZIndex: =11
+

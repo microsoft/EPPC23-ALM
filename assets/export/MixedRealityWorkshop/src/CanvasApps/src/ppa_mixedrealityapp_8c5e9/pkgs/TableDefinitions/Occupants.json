@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "Occupants": "{\"name\":\"Occupants\",\"title\":\"Occupants\",\"x-ms-permission\":\"read-write\",\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Species\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Species\"},\"Description\":{\"type\":\"string\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Description\"},\"Picture\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\",\"x-ms-media-base-url\":\"https://europe-002.azure-apim.net/apim/onedriveforbusiness/c1318dcd609d41d8b46de1a83dc07ca6/datasets/default\",\"x-ms-media-default-folder-path\":\"/CoralCollection_images\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"Picture\"},\"3DModel\":{\"type\":\"string\",\"format\":\"uri\",\"x-ms-media-kind\":\"image\",\"x-ms-media-base-url\":\"https://europe-002.azure-apim.net/apim/onedriveforbusiness/c1318dcd609d41d8b46de1a83dc07ca6/datasets/default\",\"x-ms-media-default-folder-path\":\"/CoralCollection_images\",\"x-ms-keyOrder\":0,\"x-ms-keyType\":\"none\",\"x-ms-sort\":\"none\",\"title\":\"3DModel\"},\"__PowerAppsId__\":{\"type\":\"string\",\"x-ms-keyOrder\":1,\"x-ms-keyType\":\"primary\",\"x-ms-sort\":\"none\",\"x-ms-permission\":\"read-only\",\"title\":\"Row id\"}}}}}"
+  },
+  "EntityName": "Occupants",
+  "TableName": "Occupants"
+}

@@ -1,0 +1,82 @@
+{
+  "Name": "ViewInMR",
+  "PcfConversions": [
+    {
+      "Action": [
+        {
+          "Name": "EnableShadows",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.12",
+      "To": "1.0.13"
+    },
+    {
+      "Action": [
+        {
+          "Name": "Items",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsSource",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsLabel",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsThumbnail",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsObjectWidth",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsObjectHeight",
+          "Type": "add"
+        },
+        {
+          "Name": "ItemsObjectDepth",
+          "Type": "add"
+        },
+        {
+          "Name": "OnSelect",
+          "Type": "add"
+        },
+        {
+          "Name": "Selected",
+          "Type": "add"
+        },
+        {
+          "Name": "SelectedItems",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.21",
+      "To": "1.0.22"
+    },
+    {
+      "Action": [
+        {
+          "Name": "EnableOcclusion",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.22",
+      "To": "1.0.23"
+    },
+    {
+      "Action": [
+        {
+          "Name": "EnableMarkerDetection",
+          "Type": "add"
+        }
+      ],
+      "From": "1.0.23",
+      "To": "1.0.24"
+    }
+  ],
+  "Version": "1.0.29"
+}

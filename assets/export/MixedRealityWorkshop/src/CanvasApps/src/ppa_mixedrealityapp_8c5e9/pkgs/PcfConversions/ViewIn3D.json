@@ -1,0 +1,28 @@
+{
+  "Name": "ViewIn3D",
+  "PcfConversions": [
+    {
+      "Action": [
+        {
+          "Name": "ObjectWidth",
+          "Type": "add"
+        },
+        {
+          "Name": "ObjectHeight",
+          "Type": "add"
+        },
+        {
+          "Name": "ObjectDepth",
+          "Type": "add"
+        },
+        {
+          "Name": "Units",
+          "Type": "add"
+        }
+      ],
+      "From": "1.2.21",
+      "To": "1.2.22"
+    }
+  ],
+  "Version": "1.2.22"
+}
