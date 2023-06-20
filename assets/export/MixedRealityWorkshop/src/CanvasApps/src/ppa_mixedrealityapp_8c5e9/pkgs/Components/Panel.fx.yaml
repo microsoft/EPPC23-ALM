@@ -225,7 +225,7 @@ Panel As CanvasComponent:
                 X: =20
                 ZIndex: =5
 
-                Button1 As Button:
+                Button1 As Botão:
                     Alignment: ="center"
                     BorderColor: =
                     BorderRadius: =0

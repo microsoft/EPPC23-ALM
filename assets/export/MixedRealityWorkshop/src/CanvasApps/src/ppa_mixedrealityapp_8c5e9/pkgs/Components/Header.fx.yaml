@@ -156,7 +156,7 @@ Header As CanvasComponent:
                 Width: =20
                 ZIndex: =1
 
-            lblBack As Label:
+            lblBack As Etiqueta:
                 Color: =ColorValue(Header.Theme.palette.white)
                 DisplayMode: =DisplayMode.Edit
                 Height: =32

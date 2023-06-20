@@ -246,8 +246,8 @@
   "DisplayNameKey": "PCF_3DViewer",
   "Events": [
     {
-      "Description": "Event to trigger when the 3D model is loaded",
-      "DisplayName": "On Model Load",
+      "Description": "Evento a acionar quando o modelo 3D é carregado",
+      "DisplayName": "Ao Carregar Modelo",
       "Hidden": false,
       "IsPrimaryInput": false,
       "Name": "OnModelLoad"
@@ -455,14 +455,14 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "View in 3D (preview)",
+  "Name": "Ver em 3D (pré-visualização)",
   "Properties": [
     {
       "Category": "data",
       "DefaultValue": "https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/default_cube.glb",
-      "Description": "Content source that points to where the 3D content is hosted",
+      "Description": "Origem de conteúdo que aponta para o local onde o conteúdo 3D está alojado",
       "DescriptionResourceString": "PCF_3DViewer_Src_Description",
-      "DisplayName": "Source",
+      "DisplayName": "Origem",
       "DisplayNameResourceString": "PCF_3DViewer_Src_Name",
       "EnumValues": [],
       "HelperUI": null,
@@ -485,9 +485,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Width of the 3D object (X-axis); enter 0 to reset to the original dimension.",
+      "Description": "Largura do objeto 3D (eixo X); introduza 0 para repor a dimensão original.",
       "DescriptionResourceString": "PCF_3DViewer_Width_Description",
-      "DisplayName": "Object width",
+      "DisplayName": "Largura do objeto",
       "DisplayNameResourceString": "PCF_3DViewer_Width",
       "EnumValues": [],
       "HelperUI": null,
@@ -510,9 +510,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Height of the 3D object (Y-axis); enter 0 to reset to the original dimension.",
+      "Description": "Altura do objeto 3D (eixo Y); introduza 0 para repor a dimensão original.",
       "DescriptionResourceString": "PCF_3DViewer_Height_Description",
-      "DisplayName": "Object height",
+      "DisplayName": "Altura do objeto",
       "DisplayNameResourceString": "PCF_3DViewer_Height",
       "EnumValues": [],
       "HelperUI": null,
@@ -535,9 +535,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Depth of the 3D object (Z-axis); enter 0 to reset to the original dimension.",
+      "Description": "Profundidade do objeto 3D (eixo Z); introduza 0 para repor a dimensão original.",
       "DescriptionResourceString": "PCF_3DViewer_Length_Description",
-      "DisplayName": "Object depth",
+      "DisplayName": "Profundidade do objeto",
       "DisplayNameResourceString": "PCF_3DViewer_Length",
       "EnumValues": [],
       "HelperUI": null,
@@ -560,35 +560,35 @@
     {
       "Category": "data",
       "DefaultValue": "Meters",
-      "Description": "Base unit to use for setting dimensions of the object. ",
+      "Description": "Unidade base a utilizar para definir dimensões do objeto. ",
       "DescriptionResourceString": "PCF_Units_Description",
-      "DisplayName": "Unit of measurement",
+      "DisplayName": "Unidade de medida",
       "DisplayNameResourceString": "PCF_Units",
       "EnumValues": [
         {
-          "Description": "Equal to 100 centimeters",
-          "DisplayName": "Meters",
+          "Description": "Igual a 100 centímetros",
+          "DisplayName": "Metros",
           "IsDefaultValue": true,
           "Name": "3DViewer_Meters",
           "Value": "Meters"
         },
         {
-          "Description": "Equal to 1/100 of a meter",
-          "DisplayName": "Centimeters",
+          "Description": "Igual a 1/100 de um metro",
+          "DisplayName": "Centímetros",
           "IsDefaultValue": false,
           "Name": "3DViewer_Centimeters",
           "Value": "Centimeters"
         },
         {
-          "Description": "Equal to 12 inches",
-          "DisplayName": "Feet",
+          "Description": "Igual a 12 polegadas",
+          "DisplayName": "Pés",
           "IsDefaultValue": false,
           "Name": "3DViewer_Feet",
           "Value": "Feet"
         },
         {
-          "Description": "Equal to 1/12 of a foot",
-          "DisplayName": "Inches",
+          "Description": "Igual a 1/12 de um pé",
+          "DisplayName": "Polegadas",
           "IsDefaultValue": false,
           "Name": "3DViewer_Inches",
           "Value": "Inches"
@@ -614,9 +614,9 @@
     {
       "Category": "data",
       "DefaultValue": "Sample 3D Object Cube",
-      "Description": "Alternative text for the 3D model",
+      "Description": "Texto alternativo para o modelo 3D",
       "DescriptionResourceString": "PCF_3DViewer_AltText_Description",
-      "DisplayName": "Alternative text",
+      "DisplayName": "Texto alternativo",
       "DisplayNameResourceString": "PCF_3DViewer_AltText_Name",
       "EnumValues": [],
       "HelperUI": null,
@@ -639,9 +639,9 @@
     {
       "Category": "data",
       "DefaultValue": "RGBA(230, 235, 240, 1)",
-      "Description": "Background color of the 3D viewer",
+      "Description": "Cor de fundo do visualizador 3D",
       "DescriptionResourceString": "PCF_3DViewer_Fill_Description",
-      "DisplayName": "Background fill",
+      "DisplayName": "Preenchimento de fundo",
       "DisplayNameResourceString": "PCF_3DViewer_Fill_Name",
       "EnumValues": [],
       "HelperUI": "color",
@@ -664,9 +664,9 @@
     {
       "Category": "data",
       "DefaultValue": "true",
-      "Description": "Toggles showing pins on the 3D model",
+      "Description": "Ativa/desativa a apresentação de pinos no modelo 3D",
       "DescriptionResourceString": "PCF_3DViewer_ShowPins_Description",
-      "DisplayName": "Show pins",
+      "DisplayName": "Mostrar pinos",
       "DisplayNameResourceString": "PCF_3DViewer_ShowPins",
       "EnumValues": [],
       "HelperUI": null,
@@ -689,9 +689,9 @@
     {
       "Category": "data",
       "DefaultValue": "true",
-      "Description": "Toggles the visibility of the Reset Button",
+      "Description": "Ativa/Desativa a visibilidade do Botão Repor",
       "DescriptionResourceString": "PCF_3DViewer_ShowReset_Description",
-      "DisplayName": "Show reset button",
+      "DisplayName": "Mostrar botão Repor",
       "DisplayNameResourceString": "PCF_3DViewer_ShowReset",
       "EnumValues": [],
       "HelperUI": null,
@@ -714,9 +714,9 @@
     {
       "Category": "data",
       "DefaultValue": "1000",
-      "Description": "Maximum number of pins shown on the model",
+      "Description": "Número máximo de marcadores mostrado no modelo",
       "DescriptionResourceString": "MaxPins_Desc_Key",
-      "DisplayName": "Maximum pins",
+      "DisplayName": "Máximo de marcadores",
       "DisplayNameResourceString": "MaxPins_Display_Key",
       "EnumValues": [],
       "HelperUI": "",
@@ -764,10 +764,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Data source for showing pins on the 3D model",
-      "DescriptionResourceString": "Data source for showing pins on the 3D model",
-      "DisplayName": "Pins(##PCFDatasetItems##)",
-      "DisplayNameResourceString": "Pins",
+      "Description": "Origem de dados para mostrar pinos no modelo 3D",
+      "DescriptionResourceString": "Origem de dados para mostrar pinos no modelo 3D",
+      "DisplayName": "Pinos(##PCFDatasetItems##)",
+      "DisplayNameResourceString": "Pinos",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -789,10 +789,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Data source for showing pins on the 3D model",
-      "DescriptionResourceString": "Data source for showing pins on the 3D model",
-      "DisplayName": "Pins(##PCFDatasetSelected##)",
-      "DisplayNameResourceString": "Pins",
+      "Description": "Origem de dados para mostrar pinos no modelo 3D",
+      "DescriptionResourceString": "Origem de dados para mostrar pinos no modelo 3D",
+      "DisplayName": "Pinos(##PCFDatasetSelected##)",
+      "DisplayNameResourceString": "Pinos",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -814,10 +814,10 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Data source for showing pins on the 3D model",
-      "DescriptionResourceString": "Data source for showing pins on the 3D model",
-      "DisplayName": "Pins(##PCFDatasetSelectedItems##)",
-      "DisplayNameResourceString": "Pins",
+      "Description": "Origem de dados para mostrar pinos no modelo 3D",
+      "DescriptionResourceString": "Origem de dados para mostrar pinos no modelo 3D",
+      "DisplayName": "Pinos(##PCFDatasetSelectedItems##)",
+      "DisplayNameResourceString": "Pinos",
       "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
@@ -839,9 +839,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Pin locations along the X axis in 3D coordinate space",
+      "Description": "Localizações dos pinos no eixo X do espaço de coordenadas 3D",
       "DescriptionResourceString": "PCF_3DViewer_PinsX_Desc",
-      "DisplayName": "X axis pins",
+      "DisplayName": "Marcadores do eixo X",
       "DisplayNameResourceString": "PCF_3DViewer_PinsX",
       "HelperUI": "",
       "Hidden": false,
@@ -864,9 +864,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Pin locations along the Y axis in 3D coordinate space",
+      "Description": "Localizações dos pinos no eixo Y do espaço de coordenadas 3D",
       "DescriptionResourceString": "PCF_3DViewer_PinsY_Desc",
-      "DisplayName": "Y axis pins",
+      "DisplayName": "Marcadores do eixo Y",
       "DisplayNameResourceString": "PCF_3DViewer_PinsY",
       "HelperUI": "",
       "Hidden": false,
@@ -889,9 +889,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Pin locations along the Z axis in 3D coordinate space",
+      "Description": "Localizações dos pinos no eixo Z do espaço de coordenadas 3D",
       "DescriptionResourceString": "PCF_3DViewer_PinsZ_Desc",
-      "DisplayName": "Z axis pins",
+      "DisplayName": "Marcadores do eixo Z",
       "DisplayNameResourceString": "PCF_3DViewer_PinsZ",
       "HelperUI": "",
       "Hidden": false,
@@ -996,7 +996,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 7,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"Microsoft.ViewIn3D\",\"CustomControlId\":\"Microsoft.ViewIn3D\",\"IsVirtual\":false,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Pins\":{\"DisplayName\":\"Pins\",\"Type\":\"Grid\",\"Columns\":{\"0\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsX\",\"Type\":\"Decimal\"},\"1\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsY\",\"Type\":\"Decimal\"},\"2\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsZ\",\"Type\":\"Decimal\"}},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"Source\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/default_cube.glb\"},\"ObjectWidth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectDepth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"Units\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Meters\"},\"AltText\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Sample 3D Object Cube\"},\"BackgroundFill\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"RGBA(230, 235, 240, 1)\"},\"ShowPins\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"ShowReset\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"MaxPins\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"1000\"},\"CanvasApp\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"PinsX\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsY\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsZ\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"WebAPI\"}]},\"Events\":{\"OnModelLoad\":{\"EventName\":\"OnModelLoad\"}},\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"Microsoft.ViewIn3D\",\"CustomControlId\":\"Microsoft.ViewIn3D\",\"IsVirtual\":false,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Pins\":{\"DisplayName\":\"Pinos\",\"Type\":\"Grid\",\"Columns\":{\"0\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsX\",\"Type\":\"Decimal\"},\"1\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsY\",\"Type\":\"Decimal\"},\"2\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsZ\",\"Type\":\"Decimal\"}},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"Source\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/default_cube.glb\"},\"ObjectWidth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectDepth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"Units\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Meters\"},\"AltText\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Sample 3D Object Cube\"},\"BackgroundFill\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"RGBA(230, 235, 240, 1)\"},\"ShowPins\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"ShowReset\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"MaxPins\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"1000\"},\"CanvasApp\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"PinsX\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsY\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsZ\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"WebAPI\"}]},\"Events\":{\"OnModelLoad\":{\"EventName\":\"OnModelLoad\"}},\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
       "Type": 3
     },
     {
@@ -1045,7 +1045,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2029,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en-US\",\"formatter\":null,\"languagesByCode\":{\"1033\":\"English (United States)\",\"-1\":\"All Languages\"}}}",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2029,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":2,\"FullDateTimePattern\":\"d' de 'MMMM' de 'yyyy HH:mm:ss\",\"LongDatePattern\":\"d' de 'MMMM' de 'yyyy\",\"LongTimePattern\":\"HH:mm:ss\",\"MonthDayPattern\":\"d 'de' MMMM\",\"PMDesignator\":\"\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"dd/MM/yyyy\",\"ShortTimePattern\":\"HH:mm\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM' de 'yyyy\",\"AbbreviatedDayNames\":[\"dom\",\"seg\",\"ter\",\"qua\",\"qui\",\"sex\",\"sáb\"],\"ShortestDayNames\":[\"D\",\"S\",\"T\",\"Q\",\"Q\",\"S\",\"S\"],\"DayNames\":[\"domingo\",\"segunda-feira\",\"terça-feira\",\"quarta-feira\",\"quinta-feira\",\"sexta-feira\",\"sábado\"],\"AbbreviatedMonthNames\":[\"jan\",\"fev\",\"mar\",\"abr\",\"mai\",\"jun\",\"jul\",\"ago\",\"set\",\"out\",\"nov\",\"dez\",\"\"],\"MonthNames\":[\"janeiro\",\"fevereiro\",\"março\",\"abril\",\"maio\",\"junho\",\"julho\",\"agosto\",\"setembro\",\"outubro\",\"novembro\",\"dezembro\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Calendário gregoriano\",\"AbbreviatedMonthGenitiveNames\":[\"jan\",\"fev\",\"mar\",\"abr\",\"mai\",\"jun\",\"jul\",\"ago\",\"set\",\"out\",\"nov\",\"dez\",\"\"],\"MonthGenitiveNames\":[\"janeiro\",\"fevereiro\",\"março\",\"abril\",\"maio\",\"junho\",\"julho\",\"agosto\",\"setembro\",\"outubro\",\"novembro\",\"dezembro\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\",\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\"\u00A0\",\"CurrencySymbol\":\"€\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":8,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\",\",\"NumberGroupSeparator\":\"\u00A0\",\"CurrencyPositivePattern\":3,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\",\",\"PercentGroupSeparator\":\"\u00A0\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"pt-PT\",\"formatter\":null,\"languagesByCode\":{\"2070\":\"Portuguese (Portugal)\",\"-1\":\"All Languages\"}}}",
       "Type": 3
     },
     {
@@ -1682,7 +1682,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 15,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"PCF_3DViewer\":\"View in 3D (preview)\",\"PCF_3DViewer_description\":\"View your 3D content\",\"PCF_3DViewer_StorageType_Name\":\"Storage type\",\"PCF_3DViewer_StorageType_Description\":\"The type of storage where your 3D content is saved. Default is storage from a URL\",\"PCF_3DViewer_StorageType_URL_Name\":\"URL\",\"PCF_3DViewer_StorageType_URL_Description\":\"Choosing this value allows you to load a 3D content from a URL\",\"PCF_3DViewer_StorageType_File_Name\":\"File\",\"PCF_3DViewer_StorageType_File_Description\":\"Choosing this value allows you to load a 3D content from a file/attachment\",\"PCF_3DViewer_Src_Name\":\"Source\",\"PCF_3DViewer_Src_Description\":\"Content source that points to where the 3D content is hosted\",\"PCF_3DViewer_AltText_Name\":\"Alternative text\",\"PCF_3DViewer_AltText_Description\":\"Alternative text for the 3D model\",\"PCF_3DViewer_Fill_Name\":\"Background fill\",\"PCF_3DViewer_Fill_Description\":\"Background color of the 3D viewer\",\"PCF_3DViewer_LoadingObject\":\"Loading 3D content ({0} downloaded)\",\"PCF_3DViewer_ShowPins\":\"Show pins\",\"PCF_3DViewer_ShowPins_Description\":\"Toggles showing pins on the 3D model\",\"PCF_3DViewer_ShowReset\":\"Show reset button\",\"PCF_3DViewer_ShowReset_Description\":\"Toggles the visibility of the Reset Button\",\"PCF_3DViewer_Pins\":\"Pins\",\"PCF_3DViewer_Pins_Desc\":\"Data source for showing pins on the 3D model\",\"PCF_3DViewer_PinsX\":\"X axis pins\",\"PCF_3DViewer_PinsX_Desc\":\"Pin locations along the X axis in 3D coordinate space\",\"PCF_3DViewer_PinsY\":\"Y axis pins\",\"PCF_3DViewer_PinsY_Desc\":\"Pin locations along the Y axis in 3D coordinate space\",\"PCF_3DViewer_PinsZ\":\"Z axis pins\",\"PCF_3DViewer_PinsZ_Desc\":\"Pin locations along the Z axis in 3D coordinate space\",\"True_Display_Key\":\"True\",\"False_Display_Key\":\"False\",\"MaxPins_Display_Key\":\"Maximum pins\",\"MaxPins_Desc_Key\":\"Maximum number of pins shown on the model\",\"3DViewer_OnModelLoad\":\"On Model Load\",\"3DViewer_OnModelLoad_Description\":\"Event to trigger when the 3D model is loaded\",\"PCF_3DViewer_Length\":\"Object depth\",\"PCF_3DViewer_Length_Description\":\"Depth of the 3D object (Z-axis); enter 0 to reset to the original dimension.\",\"PCF_3DViewer_Width\":\"Object width\",\"PCF_3DViewer_Width_Description\":\"Width of the 3D object (X-axis); enter 0 to reset to the original dimension.\",\"PCF_3DViewer_Height\":\"Object height\",\"PCF_3DViewer_Height_Description\":\"Height of the 3D object (Y-axis); enter 0 to reset to the original dimension.\",\"PCF_Units\":\"Unit of measurement\",\"PCF_Units_Description\":\"Base unit to use for setting dimensions of the object. \",\"Units_Meters\":\"Meters\",\"Units_Meters_Description\":\"Equal to 100 centimeters\",\"Units_Centimeters\":\"Centimeters\",\"Units_Centimeters_Description\":\"Equal to 1/100 of a meter\",\"Units_Feet\":\"Feet\",\"Units_Feet_Description\":\"Equal to 12 inches\",\"Units_Inches\":\"Inches\",\"Units_Inches_Description\":\"Equal to 1/12 of a foot\",\"PCF_3DViewer_Error_EmptySource\":\"Empty Source\",\"PCF_3DViewer_Error_EmptySourceDescription\":\"To view content in 3D, add your GLB source location in the properties pane on the right hand side. ##LINK0## Read our documentation ##/LINK0## for more information.\",\"PCF_3DViewer_Error_CannotViewContent\":\"Cannot view content\",\"PCF_3DViewer_Error_CannotViewContentDescription\":\"View in 3D can only display 3D content in the GLB, OBJ, or STL formats, ##LINK0## learn how to convert your content. ##/LINK0##\",\"PCF_3DViewer_Error_CannotAccess\":\"Cannot access your content\",\"PCF_3DViewer_Error_CannotAccessDescription\":\"Check your internet connection or ##LINK0## read our documentation ##/LINK0## for more information. \",\"PCF_3DViewer_Error_CORSIssue\":\"CORS policy issue\",\"PCF_3DViewer_Error_CORSIssueDescription\":\"Make sure your source is coming from an HTTPS link. ##LINK0## Learn more about CORS here. ##/LINK0##\",\"PCF_3DViewer_Error_Babylon\":\"Cannot view content\",\"PCF_3DViewer_Error_BabylonDescription\":\"Something went wrong while displaying the content.\",\"PCF_3DViewer_Error_TooManyInstances\":\"Too many 3D viewers\",\"PCF_3DViewer_Error_TooManyInstancesDescription\":\"There are too many View in 3D controls currently being shown. ##LINK0## Read our documentation ##/LINK0## for more information.\",\"PCF_3DViewer_Error_CannotUseCompressedFolders\":\"Compressed folders are not supported\",\"PCF_3DViewer_Error_CannotUseCompressedFoldersDescription\":\"3D models must be in the GLB, OBJ, or STL formats.\",\"PCF_3DViewer_Error_UnexpectedMagicNumber\":\"Invalid 3D model\",\"PCF_3DViewer_Error_UnexpectedMagicNumberDescription\":\"Check your model source file. The file is corrupt or not a valid GLB file.\",\"PCF_3DViewer_Error_ZeroFileSize\":\"File is empty\",\"PCF_3DViewer_Error_ZeroFileSizeDescription\":\"The 3D model file is empty.\",\"PCF_ErrorHelper_GenericArError\":\"Error encountered while attempting to display in mixed reality\",\"PCF_3DViewer_SourceIntroMessage\":\"Set the Source property to easily add 3D content. Source can be a URL, an attachment, or media from a data connector. Click to learn more.\",\"PCF_3DViewer_AriaSVGImage\":\"Error Cube with an X\",\"PCF_3DViewer_BabylonCanvasAriaLabel\":\"Interactive canvas to view and manipulate a 3D model, with alt text: {0}.\",\"PCF_3DViewer_PercentSign\":\"%\",\"PCF_3DViewer_Reset\":\"Reset\",\"PCF_3DViewer_ResetDescription\":\"Reset the model back to the initial position\",\"PCF_3DViewer_Error_Offline\":\"Offline\",\"PCF_3DViewer_Error_OfflineDescription\":\"Cannot access your content. Check your internet connection.\",\"PCF_3DViewer_Error_CreateForm\":\"Upload File\",\"PCF_3DViewer_Error_CreateFormDescription\":\"This record hasn't been created yet. To view content, create this record\",\"PCF_3DViewer_Error_FileTooLarge\":\"File Too Large\",\"PCF_3DViewer_Error_FileTooLargeDescription\":\"The uploaded file is too large, ##LINK0## learn how to optimize your content. ##/LINK0##\",\"PCF_3DViewer_LongLoadLearnMore\":\"We're loading your model. If this is taking longer than expected, you might need to optimize your model for mixed reality. Click here to learn more.\",\"PCF_3DViewer_HangOnLargeFile\":\"Hang on, we are loading a large file ({0} downloaded)\",\"PCF_3DViewer_FinishingUp\":\"Finishing up ({0} downloaded)\",\"Keyboard_Camera_Aria_PanLeft\":\"Move model right\",\"Keyboard_Camera_Aria_PanRight\":\"Move model left\",\"Keyboard_Camera_Aria_PanUp\":\"Move model down\",\"Keyboard_Camera_Aria_PanDown\":\"Move model up\",\"Keyboard_Camera_Aria_RotateLeft\":\"Rotate model clockwise\",\"Keyboard_Camera_Aria_RotateRight\":\"Rotate model counter clockwise\",\"Keyboard_Camera_Aria_TumbleUp\":\"Rotate model backward\",\"Keyboard_Camera_Aria_TumbleDown\":\"Rotate model forward\",\"Keyboard_Camera_Aria_ZoomIn\":\"Zoom in on model\",\"Keyboard_Camera_Aria_ZoomOut\":\"Zoom out on model\",\"Keyboard_Camera_Aria_Reset\":\"Resetting camera on model\",\"Pin_Select_Aria\":\"Pin selected at coordinate X {0}. Y {1}. Z {2}.\",\"Enable_Marker_Detection\":\"Enable marker detection\",\"Enable_Marker_Detection_Description\":\"Detect markers placed in your physical space for accurate placement of media\",\"Marker_Detection_LearnMore\":\"Marker detection requires that you put a physical marker in your space. Click here to get the marker.\",\"Marker_Detection_Update_Required\":\"Marker detection in mixed reality is not supported on this version of Power Apps. Install the latest version from the store to enable this feature.\",\"PCF_3DViewer_Bytes\":\"bytes\",\"PCF_3DViewer_KB\":\"KB\",\"PCF_3DViewer_MB\":\"MB\",\"PCF_3DViewer_GB\":\"GB\",\"StudioPreview_NavBar_Title\":\"View {0}\",\"StudioPreview_NavBar_CloseButton_AccessibilityLabel\":\"Close\",\"PCF_3DViewer_Media\":\"Media\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"PCF_3DViewer\":\"Ver em 3D (pré-visualização)\",\"PCF_3DViewer_description\":\"Ver o seu conteúdo 3D\",\"PCF_3DViewer_StorageType_Name\":\"Tipo de armazenamento\",\"PCF_3DViewer_StorageType_Description\":\"O tipo de armazenamento no qual o conteúdo 3D está guardado. A predefinição é armazenamento a partir de um URL\",\"PCF_3DViewer_StorageType_URL_Name\":\"URL\",\"PCF_3DViewer_StorageType_URL_Description\":\"Escolher este valor permite-lhe carregar um conteúdo 3D a partir de um URL\",\"PCF_3DViewer_StorageType_File_Name\":\"Ficheiro\",\"PCF_3DViewer_StorageType_File_Description\":\"Escolher este valor permite-lhe carregar um conteúdo 3D a partir de um ficheiro/anexo\",\"PCF_3DViewer_Src_Name\":\"Origem\",\"PCF_3DViewer_Src_Description\":\"Origem de conteúdo que aponta para o local onde o conteúdo 3D está alojado\",\"PCF_3DViewer_AltText_Name\":\"Texto alternativo\",\"PCF_3DViewer_AltText_Description\":\"Texto alternativo para o modelo 3D\",\"PCF_3DViewer_Fill_Name\":\"Preenchimento de fundo\",\"PCF_3DViewer_Fill_Description\":\"Cor de fundo do visualizador 3D\",\"PCF_3DViewer_LoadingObject\":\"A carregar conteúdo 3D ({0} transferido)\",\"PCF_3DViewer_ShowPins\":\"Mostrar pinos\",\"PCF_3DViewer_ShowPins_Description\":\"Ativa/desativa a apresentação de pinos no modelo 3D\",\"PCF_3DViewer_ShowReset\":\"Mostrar botão Repor\",\"PCF_3DViewer_ShowReset_Description\":\"Ativa/Desativa a visibilidade do Botão Repor\",\"PCF_3DViewer_Pins\":\"Pinos\",\"PCF_3DViewer_Pins_Desc\":\"Origem de dados para mostrar pinos no modelo 3D\",\"PCF_3DViewer_PinsX\":\"Marcadores do eixo X\",\"PCF_3DViewer_PinsX_Desc\":\"Localizações dos pinos no eixo X do espaço de coordenadas 3D\",\"PCF_3DViewer_PinsY\":\"Marcadores do eixo Y\",\"PCF_3DViewer_PinsY_Desc\":\"Localizações dos pinos no eixo Y do espaço de coordenadas 3D\",\"PCF_3DViewer_PinsZ\":\"Marcadores do eixo Z\",\"PCF_3DViewer_PinsZ_Desc\":\"Localizações dos pinos no eixo Z do espaço de coordenadas 3D\",\"True_Display_Key\":\"Verdadeiro\",\"False_Display_Key\":\"Falso\",\"MaxPins_Display_Key\":\"Máximo de marcadores\",\"MaxPins_Desc_Key\":\"Número máximo de marcadores mostrado no modelo\",\"3DViewer_OnModelLoad\":\"Ao Carregar Modelo\",\"3DViewer_OnModelLoad_Description\":\"Evento a acionar quando o modelo 3D é carregado\",\"PCF_3DViewer_Length\":\"Profundidade do objeto\",\"PCF_3DViewer_Length_Description\":\"Profundidade do objeto 3D (eixo Z); introduza 0 para repor a dimensão original.\",\"PCF_3DViewer_Width\":\"Largura do objeto\",\"PCF_3DViewer_Width_Description\":\"Largura do objeto 3D (eixo X); introduza 0 para repor a dimensão original.\",\"PCF_3DViewer_Height\":\"Altura do objeto\",\"PCF_3DViewer_Height_Description\":\"Altura do objeto 3D (eixo Y); introduza 0 para repor a dimensão original.\",\"PCF_Units\":\"Unidade de medida\",\"PCF_Units_Description\":\"Unidade base a utilizar para definir dimensões do objeto. \",\"Units_Meters\":\"Metros\",\"Units_Meters_Description\":\"Igual a 100 centímetros\",\"Units_Centimeters\":\"Centímetros\",\"Units_Centimeters_Description\":\"Igual a 1/100 de um metro\",\"Units_Feet\":\"Pés\",\"Units_Feet_Description\":\"Igual a 12 polegadas\",\"Units_Inches\":\"Polegadas\",\"Units_Inches_Description\":\"Igual a 1/12 de um pé\",\"PCF_3DViewer_Error_EmptySource\":\"Origem Vazia\",\"PCF_3DViewer_Error_EmptySourceDescription\":\"Para ver conteúdo em 3D, adicione a localização de origem GLB no painel de propriedades do lado direito. ##LINK0## Leia a documentação ##/LINK0## para obter mais informações.\",\"PCF_3DViewer_Error_CannotViewContent\":\"Não é possível ver o conteúdo\",\"PCF_3DViewer_Error_CannotViewContentDescription\":\"A funcionalidade Ver em 3D só pode apresentar conteúdos 3D no formato GLB, OBJ ou STL. ##LINK0## Obtenha informações sobre como converter os seus conteúdos. ##/LINK0##\",\"PCF_3DViewer_Error_CannotAccess\":\"Não é possível aceder ao conteúdo\",\"PCF_3DViewer_Error_CannotAccessDescription\":\"Verifique a ligação à Internet ou ##LINK0## leia a nossa documentação ##/LINK0## para obter mais informações. \",\"PCF_3DViewer_Error_CORSIssue\":\"Problema da política CORS\",\"PCF_3DViewer_Error_CORSIssueDescription\":\"Certifique-se de que a origem é proveniente de uma ligação HTTPS. ##LINK0## Mais informações sobre o CORS aqui. ##/LINK0##\",\"PCF_3DViewer_Error_Babylon\":\"Não é possível ver o conteúdo\",\"PCF_3DViewer_Error_BabylonDescription\":\"Ocorreu um problema ao apresentar o conteúdo.\",\"PCF_3DViewer_Error_TooManyInstances\":\"Demasiados visualizadores 3D\",\"PCF_3DViewer_Error_TooManyInstancesDescription\":\"Estão atualmente a ser mostrados demasiados controlos Ver em 3D. ##LINK0## Leia a nossa documentação ##/LINK0## para obter mais informações.\",\"PCF_3DViewer_Error_CannotUseCompressedFolders\":\"Não são suportadas pastas comprimidas\",\"PCF_3DViewer_Error_CannotUseCompressedFoldersDescription\":\"Os modelos 3D têm de estar no formato GLB, OBJ ou STL.\",\"PCF_3DViewer_Error_UnexpectedMagicNumber\":\"Modelo 3D inválido\",\"PCF_3DViewer_Error_UnexpectedMagicNumberDescription\":\"Verifique o ficheiro de origem do modelo. O ficheiro está danificado ou não é um ficheiro GLB válido.\",\"PCF_3DViewer_Error_ZeroFileSize\":\"O ficheiro está vazio\",\"PCF_3DViewer_Error_ZeroFileSizeDescription\":\"O ficheiro de modelo 3D está vazio.\",\"PCF_ErrorHelper_GenericArError\":\"Foi encontrado um erro ao tentar apresentar em realidade mista\",\"PCF_3DViewer_SourceIntroMessage\":\"Defina a propriedade Origem para adicionar facilmente conteúdo 3D. A origem pode ser um URL, um anexo ou multimédia de um conector de dados. Clique para obter mais informações.\",\"PCF_3DViewer_AriaSVGImage\":\"Cubo de Erro com um X\",\"PCF_3DViewer_BabylonCanvasAriaLabel\":\"Tela interativa para ver e manipular um modelo 3D, com texto alternativo: {0}.\",\"PCF_3DViewer_PercentSign\":\"%\",\"PCF_3DViewer_Reset\":\"Repor\",\"PCF_3DViewer_ResetDescription\":\"Repor a posição inicial do modelo\",\"PCF_3DViewer_Error_Offline\":\"Offline\",\"PCF_3DViewer_Error_OfflineDescription\":\"Não é possível aceder ao conteúdo. Verifique a ligação à Internet.\",\"PCF_3DViewer_Error_CreateForm\":\"Carregar Ficheiro\",\"PCF_3DViewer_Error_CreateFormDescription\":\"Este registo ainda não foi criado. Para ver o conteúdo, crie este registo\",\"PCF_3DViewer_Error_FileTooLarge\":\"Ficheiro Demasiado Grande\",\"PCF_3DViewer_Error_FileTooLargeDescription\":\"O ficheiro carregado é demasiado grande. ##LINK0## Mais informações sobre como otimizar os seus conteúdos. ##/LINK0##\",\"PCF_3DViewer_LongLoadLearnMore\":\"Estamos a carregar o seu modelo. Se esta operação estiver a demorar mais tempo do que o esperado, é possível que tenha de otimizar o modelo para realidade mista. Clique aqui para obter mais informações.\",\"PCF_3DViewer_HangOnLargeFile\":\"Aguarde, estamos a carregar um ficheiro grande ({0} transferido)\",\"PCF_3DViewer_FinishingUp\":\"A concluir ({0} transferido)\",\"Keyboard_Camera_Aria_PanLeft\":\"Mover modelo para a direita\",\"Keyboard_Camera_Aria_PanRight\":\"Mover modelo para a esquerda\",\"Keyboard_Camera_Aria_PanUp\":\"Mover modelo para baixo\",\"Keyboard_Camera_Aria_PanDown\":\"Mover modelo para cima\",\"Keyboard_Camera_Aria_RotateLeft\":\"Rodar modelo para a direita\",\"Keyboard_Camera_Aria_RotateRight\":\"Rodar modelo para a esquerda\",\"Keyboard_Camera_Aria_TumbleUp\":\"Rodar modelo para trás\",\"Keyboard_Camera_Aria_TumbleDown\":\"Rodar modelo para a frente\",\"Keyboard_Camera_Aria_ZoomIn\":\"Ampliar o modelo\",\"Keyboard_Camera_Aria_ZoomOut\":\"Reduzir o modelo\",\"Keyboard_Camera_Aria_Reset\":\"A repor a câmara no modelo\",\"Pin_Select_Aria\":\"Marcador selecionado na coordenada X {0}. Y {1}. Z {2}.\",\"Enable_Marker_Detection\":\"Ativar deteção de marcadores\",\"Enable_Marker_Detection_Description\":\"Detetar marcadores colocados no espaço físico para o posicionamento exato de multimédia\",\"Marker_Detection_LearnMore\":\"A deteção de marcadores necessita que coloque um marcador físico no seu espaço. Clique aqui para obter o marcador.\",\"Marker_Detection_Update_Required\":\"A deteção de marcadores em realidade mista não é suportada nesta versão do Power Apps. Instale a versão mais recente a partir da Store para ativar esta funcionalidade.\",\"PCF_3DViewer_Bytes\":\"bytes\",\"PCF_3DViewer_KB\":\"KB\",\"PCF_3DViewer_MB\":\"MB\",\"PCF_3DViewer_GB\":\"GB\",\"StudioPreview_NavBar_Title\":\"Ver {0}\",\"StudioPreview_NavBar_CloseButton_AccessibilityLabel\":\"Fechar\",\"PCF_3DViewer_Media\":\"Multimédia\"}}}",
       "Type": 3
     },
     {
