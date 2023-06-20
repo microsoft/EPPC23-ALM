@@ -254,8 +254,10 @@ In this task, you are going to find out if the approval you configured in the la
 
 And that's how the deployment with approvals works!
 
-## Next lab
+## Next steps
 
-This is the end of lab 05, select the link below to move back to the lab overview.
+This is the end of lab 05, select the link below to move back to the lab overview.  
+  
+There is a [Microsoft Learn article](https://aka.ms/pp/pipelines/extend/github) that shows how you can extend pipelines using GitHub Actions, you can optionally do that when you're finished with all the labs.
 
 [⏭️ Move back to the lab overview](../README.md)
