@@ -1,0 +1,1697 @@
+{
+  "AuthConfigProperties": [
+    {
+      "AltText": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "BackgroundFill": {
+        "EnabledForFlyout": false,
+        "HelperUI": "color",
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 32,
+        "WizardStep": null
+      },
+      "Height": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Size",
+        "PropertyKind": 2,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Items": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 2,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "ObjectDepth": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "ObjectHeight": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "ObjectWidth": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "ShowPins": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 2,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "ShowReset": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Source": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Units": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Visible": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Width": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Size",
+        "PropertyKind": 2,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "X": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Position",
+        "PropertyKind": 2,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Y": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "Position",
+        "PropertyKind": 2,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      }
+    },
+    {
+      "Height": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": "Design",
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Visible": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": "Design",
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Width": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": "Design",
+        "Type": 0,
+        "WizardStep": null
+      },
+      "X": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": "Design",
+        "Type": 0,
+        "WizardStep": null
+      },
+      "Y": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": "Design",
+        "Type": 0,
+        "WizardStep": null
+      }
+    }
+  ],
+  "CommonEvents": [
+    {
+      "Description": "",
+      "DisplayName": "OnChange",
+      "Hidden": false,
+      "IsPrimaryInput": false,
+      "Name": "OnChange"
+    },
+    {
+      "Description": "",
+      "DisplayName": "OnSelect",
+      "Hidden": false,
+      "IsPrimaryInput": false,
+      "Name": "OnSelect"
+    }
+  ],
+  "ControlConstructor": "ViewIn3D",
+  "ControlNamespace": "Microsoft",
+  "DisplayNameKey": "PCF_3DViewer",
+  "Events": [
+    {
+      "Description": "Event to trigger when the 3D model is loaded",
+      "DisplayName": "On Model Load",
+      "Hidden": false,
+      "IsPrimaryInput": false,
+      "Name": "OnModelLoad"
+    }
+  ],
+  "IncludedProperties": [
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "CC_X",
+      "DisplayNameResourceString": "CC_X",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "X",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "CC_Y",
+      "DisplayNameResourceString": "CC_Y",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Y",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "400",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Width",
+      "DisplayNameResourceString": "Width",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Width",
+      "NullDefaultValue": "0",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "400",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": "400"
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "400",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Height",
+      "DisplayNameResourceString": "Height",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Height",
+      "NullDefaultValue": "0",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "400",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 2,
+      "WebDefaultValue": "400"
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "true",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Visible",
+      "DisplayNameResourceString": "Visible",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Visible",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 4,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "DisplayMode",
+      "DisplayNameResourceString": "DisplayMode",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "DisplayMode",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 27,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "0",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "TabIndex",
+      "DisplayNameResourceString": "TabIndex",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "TabIndex",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 2,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "Tooltip",
+      "DisplayNameResourceString": "Tooltip",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Tooltip",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    }
+  ],
+  "Name": "View in 3D (preview)",
+  "Properties": [
+    {
+      "Category": "data",
+      "DefaultValue": "https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/default_cube.glb",
+      "Description": "Content source that points to where the 3D content is hosted",
+      "DescriptionResourceString": "PCF_3DViewer_Src_Description",
+      "DisplayName": "Source",
+      "DisplayNameResourceString": "PCF_3DViewer_Src_Name",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": true,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Source",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 7,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Width of the 3D object (X-axis); enter 0 to reset to the original dimension.",
+      "DescriptionResourceString": "PCF_3DViewer_Width_Description",
+      "DisplayName": "Object width",
+      "DisplayNameResourceString": "PCF_3DViewer_Width",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "ObjectWidth",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 14,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Height of the 3D object (Y-axis); enter 0 to reset to the original dimension.",
+      "DescriptionResourceString": "PCF_3DViewer_Height_Description",
+      "DisplayName": "Object height",
+      "DisplayNameResourceString": "PCF_3DViewer_Height",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "ObjectHeight",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 14,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Depth of the 3D object (Z-axis); enter 0 to reset to the original dimension.",
+      "DescriptionResourceString": "PCF_3DViewer_Length_Description",
+      "DisplayName": "Object depth",
+      "DisplayNameResourceString": "PCF_3DViewer_Length",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "ObjectDepth",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 14,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Meters",
+      "Description": "Base unit to use for setting dimensions of the object. ",
+      "DescriptionResourceString": "PCF_Units_Description",
+      "DisplayName": "Unit of measurement",
+      "DisplayNameResourceString": "PCF_Units",
+      "EnumValues": [
+        {
+          "Description": "Equal to 100 centimeters",
+          "DisplayName": "Meters",
+          "IsDefaultValue": true,
+          "Name": "3DViewer_Meters",
+          "Value": "Meters"
+        },
+        {
+          "Description": "Equal to 1/100 of a meter",
+          "DisplayName": "Centimeters",
+          "IsDefaultValue": false,
+          "Name": "3DViewer_Centimeters",
+          "Value": "Centimeters"
+        },
+        {
+          "Description": "Equal to 12 inches",
+          "DisplayName": "Feet",
+          "IsDefaultValue": false,
+          "Name": "3DViewer_Feet",
+          "Value": "Feet"
+        },
+        {
+          "Description": "Equal to 1/12 of a foot",
+          "DisplayName": "Inches",
+          "IsDefaultValue": false,
+          "Name": "3DViewer_Inches",
+          "Value": "Inches"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Units",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "Meters",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 0,
+      "WebDefaultValue": "Meters"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Sample 3D Object Cube",
+      "Description": "Alternative text for the 3D model",
+      "DescriptionResourceString": "PCF_3DViewer_AltText_Description",
+      "DisplayName": "Alternative text",
+      "DisplayNameResourceString": "PCF_3DViewer_AltText_Name",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "AltText",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "RGBA(230, 235, 240, 1)",
+      "Description": "Background color of the 3D viewer",
+      "DescriptionResourceString": "PCF_3DViewer_Fill_Description",
+      "DisplayName": "Background fill",
+      "DisplayNameResourceString": "PCF_3DViewer_Fill_Name",
+      "EnumValues": [],
+      "HelperUI": "color",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "BackgroundFill",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 6,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "true",
+      "Description": "Toggles showing pins on the 3D model",
+      "DescriptionResourceString": "PCF_3DViewer_ShowPins_Description",
+      "DisplayName": "Show pins",
+      "DisplayNameResourceString": "PCF_3DViewer_ShowPins",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "ShowPins",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "true",
+      "Description": "Toggles the visibility of the Reset Button",
+      "DescriptionResourceString": "PCF_3DViewer_ShowReset_Description",
+      "DisplayName": "Show reset button",
+      "DisplayNameResourceString": "PCF_3DViewer_ShowReset",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "ShowReset",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "1000",
+      "Description": "Maximum number of pins shown on the model",
+      "DescriptionResourceString": "MaxPins_Desc_Key",
+      "DisplayName": "Maximum pins",
+      "DisplayNameResourceString": "MaxPins_Display_Key",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "MaxPins",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 16,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "CanvasApp",
+      "DescriptionResourceString": "CanvasApp",
+      "DisplayName": "CanvasApp",
+      "DisplayNameResourceString": "CanvasApp",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "CanvasApp",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Data source for showing pins on the 3D model",
+      "DescriptionResourceString": "Data source for showing pins on the 3D model",
+      "DisplayName": "Pins(##PCFDatasetItems##)",
+      "DisplayNameResourceString": "Pins",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Items",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 26,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Data source for showing pins on the 3D model",
+      "DescriptionResourceString": "Data source for showing pins on the 3D model",
+      "DisplayName": "Pins(##PCFDatasetSelected##)",
+      "DisplayNameResourceString": "Pins",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Selected",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "Items",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 5,
+      "Usage": 1,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Data source for showing pins on the 3D model",
+      "DescriptionResourceString": "Data source for showing pins on the 3D model",
+      "DisplayName": "Pins(##PCFDatasetSelectedItems##)",
+      "DisplayNameResourceString": "Pins",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "SelectedItems",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "Items",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 26,
+      "Usage": 1,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Pin locations along the X axis in 3D coordinate space",
+      "DescriptionResourceString": "PCF_3DViewer_PinsX_Desc",
+      "DisplayName": "X axis pins",
+      "DisplayNameResourceString": "PCF_3DViewer_PinsX",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "PinsX",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "Items",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Pin locations along the Y axis in 3D coordinate space",
+      "DescriptionResourceString": "PCF_3DViewer_PinsY_Desc",
+      "DisplayName": "Y axis pins",
+      "DisplayNameResourceString": "PCF_3DViewer_PinsY",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "PinsY",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "Items",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "Pin locations along the Z axis in 3D coordinate space",
+      "DescriptionResourceString": "PCF_3DViewer_PinsZ_Desc",
+      "DisplayName": "Z axis pins",
+      "DisplayNameResourceString": "PCF_3DViewer_PinsZ",
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "PinsZ",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "Items",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "",
+      "Description": "",
+      "DescriptionResourceString": "",
+      "DisplayName": "PCFTeamsTheme",
+      "DisplayNameResourceString": "",
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "PCFTeamsTheme",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 3,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    }
+  ],
+  "PropertyDependencies": [
+    {
+      "Input": "Items",
+      "Output": "Selected",
+      "RequiredFor": ""
+    },
+    {
+      "Input": "Items",
+      "Output": "SelectedItems",
+      "RequiredFor": ""
+    }
+  ],
+  "Resources": [
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 1,
+      "ModifiedPath": "",
+      "Path": "/PCF/prop-types.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 2,
+      "ModifiedPath": "",
+      "Path": "/PCF/react-fela.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 3,
+      "ModifiedPath": "",
+      "Path": "/PCF/fela.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 4,
+      "ModifiedPath": "",
+      "Path": "/PCF/fela-dom.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 6,
+      "ModifiedPath": "",
+      "Path": "/ctrllib/PCFControls/js/PCFControlWrapper.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 7,
+      "ModifiedPath": "",
+      "Path": "/ctrllib/PcfControlProxy/js/PcfControlProxy.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 7,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"Microsoft.ViewIn3D\",\"CustomControlId\":\"Microsoft.ViewIn3D\",\"IsVirtual\":false,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{\"Pins\":{\"DisplayName\":\"Pins\",\"Type\":\"Grid\",\"Columns\":{\"0\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsX\",\"Type\":\"Decimal\"},\"1\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsY\",\"Type\":\"Decimal\"},\"2\":{\"Required\":false,\"Usage\":2,\"Name\":\"PinsZ\",\"Type\":\"Decimal\"}},\"Primary\":true,\"InitialDataSetFetch\":true,\"CDSDataSetOptions\":null}},\"Properties\":{\"Source\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"https://raw.githubusercontent.com/microsoft/experimental-pcf-control-assets/master/default_cube.glb\"},\"ObjectWidth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"ObjectDepth\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"Units\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Meters\"},\"AltText\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Sample 3D Object Cube\"},\"BackgroundFill\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"RGBA(230, 235, 240, 1)\"},\"ShowPins\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"ShowReset\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"MaxPins\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"1000\"},\"CanvasApp\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Items\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Selected\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"SelectedItems\":{\"Required\":true,\"Usage\":2,\"DefaultValue\":\"\"},\"PinsX\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsY\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"PinsZ\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"WebAPI\"}]},\"Events\":{\"OnModelLoad\":{\"EventName\":\"OnModelLoad\"}},\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[{\"Input\":\"Items\",\"Output\":\"Selected\",\"RequiredFor\":\"\"},{\"Input\":\"Items\",\"Output\":\"SelectedItems\",\"RequiredFor\":\"\"}],\"Children\":null}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 8,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Source\",\"Type\":\"SingleLine_Url\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"ObjectWidth\",\"Type\":\"Decimal\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ObjectHeight\",\"Type\":\"Decimal\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ObjectDepth\",\"Type\":\"Decimal\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Units\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AltText\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BackgroundFill\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FillColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ShowPins\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ShowReset\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"MaxPins\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"CanvasApp\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Items\",\"Type\":\"DataSet\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Selected\",\"Type\":\"Object\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SelectedItems\",\"Type\":\"DataSet\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PinsX\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PinsY\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PinsZ\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"TabIndex\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Tooltip\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 9,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"1.2.22\",\"IsFirstParty\":true}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 11,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/bundle.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 10,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/libs/babylon.js",
+      "Type": 0
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 9,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1033.resx",
+      "Type": 2
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 9,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1033.resx",
+      "Type": 2
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 14,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2029,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en-US\",\"formatter\":null,\"languagesByCode\":{\"1033\":\"English (United States)\",\"-1\":\"All Languages\"}}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1025.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1026.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1027.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1028.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1029.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1030.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1031.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1032.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1033.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1035.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1036.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1037.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1038.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1040.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1041.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1042.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1043.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1044.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1045.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1046.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1048.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1049.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1050.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1051.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1053.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1054.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1055.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1057.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1058.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1060.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1061.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1062.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1063.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1066.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1069.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1081.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1086.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1087.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.1110.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.2052.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.2070.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.2074.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.3076.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.3082.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/3DViewer.3098.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1025.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1026.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1027.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1028.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1029.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1030.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1031.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1032.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1033.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1035.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1036.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1037.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1038.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1040.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1041.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1042.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1043.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1044.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1045.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1046.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1048.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1049.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1050.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1051.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1053.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1054.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1055.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1057.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1058.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1060.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1061.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1062.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1063.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1066.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1069.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1081.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1086.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1087.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.1110.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.2052.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.2070.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.2074.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.3076.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.3082.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": true,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "/PCFControls/ViewIn3D/strings/ViewIn3DBase.3098.json",
+      "Type": 5
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 15,
+      "ModifiedPath": "",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"PCF_3DViewer\":\"View in 3D (preview)\",\"PCF_3DViewer_description\":\"View your 3D content\",\"PCF_3DViewer_StorageType_Name\":\"Storage type\",\"PCF_3DViewer_StorageType_Description\":\"The type of storage where your 3D content is saved. Default is storage from a URL\",\"PCF_3DViewer_StorageType_URL_Name\":\"URL\",\"PCF_3DViewer_StorageType_URL_Description\":\"Choosing this value allows you to load a 3D content from a URL\",\"PCF_3DViewer_StorageType_File_Name\":\"File\",\"PCF_3DViewer_StorageType_File_Description\":\"Choosing this value allows you to load a 3D content from a file/attachment\",\"PCF_3DViewer_Src_Name\":\"Source\",\"PCF_3DViewer_Src_Description\":\"Content source that points to where the 3D content is hosted\",\"PCF_3DViewer_AltText_Name\":\"Alternative text\",\"PCF_3DViewer_AltText_Description\":\"Alternative text for the 3D model\",\"PCF_3DViewer_Fill_Name\":\"Background fill\",\"PCF_3DViewer_Fill_Description\":\"Background color of the 3D viewer\",\"PCF_3DViewer_LoadingObject\":\"Loading 3D content ({0} downloaded)\",\"PCF_3DViewer_ShowPins\":\"Show pins\",\"PCF_3DViewer_ShowPins_Description\":\"Toggles showing pins on the 3D model\",\"PCF_3DViewer_ShowReset\":\"Show reset button\",\"PCF_3DViewer_ShowReset_Description\":\"Toggles the visibility of the Reset Button\",\"PCF_3DViewer_Pins\":\"Pins\",\"PCF_3DViewer_Pins_Desc\":\"Data source for showing pins on the 3D model\",\"PCF_3DViewer_PinsX\":\"X axis pins\",\"PCF_3DViewer_PinsX_Desc\":\"Pin locations along the X axis in 3D coordinate space\",\"PCF_3DViewer_PinsY\":\"Y axis pins\",\"PCF_3DViewer_PinsY_Desc\":\"Pin locations along the Y axis in 3D coordinate space\",\"PCF_3DViewer_PinsZ\":\"Z axis pins\",\"PCF_3DViewer_PinsZ_Desc\":\"Pin locations along the Z axis in 3D coordinate space\",\"True_Display_Key\":\"True\",\"False_Display_Key\":\"False\",\"MaxPins_Display_Key\":\"Maximum pins\",\"MaxPins_Desc_Key\":\"Maximum number of pins shown on the model\",\"3DViewer_OnModelLoad\":\"On Model Load\",\"3DViewer_OnModelLoad_Description\":\"Event to trigger when the 3D model is loaded\",\"PCF_3DViewer_Length\":\"Object depth\",\"PCF_3DViewer_Length_Description\":\"Depth of the 3D object (Z-axis); enter 0 to reset to the original dimension.\",\"PCF_3DViewer_Width\":\"Object width\",\"PCF_3DViewer_Width_Description\":\"Width of the 3D object (X-axis); enter 0 to reset to the original dimension.\",\"PCF_3DViewer_Height\":\"Object height\",\"PCF_3DViewer_Height_Description\":\"Height of the 3D object (Y-axis); enter 0 to reset to the original dimension.\",\"PCF_Units\":\"Unit of measurement\",\"PCF_Units_Description\":\"Base unit to use for setting dimensions of the object. \",\"Units_Meters\":\"Meters\",\"Units_Meters_Description\":\"Equal to 100 centimeters\",\"Units_Centimeters\":\"Centimeters\",\"Units_Centimeters_Description\":\"Equal to 1/100 of a meter\",\"Units_Feet\":\"Feet\",\"Units_Feet_Description\":\"Equal to 12 inches\",\"Units_Inches\":\"Inches\",\"Units_Inches_Description\":\"Equal to 1/12 of a foot\",\"PCF_3DViewer_Error_EmptySource\":\"Empty Source\",\"PCF_3DViewer_Error_EmptySourceDescription\":\"To view content in 3D, add your GLB source location in the properties pane on the right hand side. ##LINK0## Read our documentation ##/LINK0## for more information.\",\"PCF_3DViewer_Error_CannotViewContent\":\"Cannot view content\",\"PCF_3DViewer_Error_CannotViewContentDescription\":\"View in 3D can only display 3D content in the GLB, OBJ, or STL formats, ##LINK0## learn how to convert your content. ##/LINK0##\",\"PCF_3DViewer_Error_CannotAccess\":\"Cannot access your content\",\"PCF_3DViewer_Error_CannotAccessDescription\":\"Check your internet connection or ##LINK0## read our documentation ##/LINK0## for more information. \",\"PCF_3DViewer_Error_CORSIssue\":\"CORS policy issue\",\"PCF_3DViewer_Error_CORSIssueDescription\":\"Make sure your source is coming from an HTTPS link. ##LINK0## Learn more about CORS here. ##/LINK0##\",\"PCF_3DViewer_Error_Babylon\":\"Cannot view content\",\"PCF_3DViewer_Error_BabylonDescription\":\"Something went wrong while displaying the content.\",\"PCF_3DViewer_Error_TooManyInstances\":\"Too many 3D viewers\",\"PCF_3DViewer_Error_TooManyInstancesDescription\":\"There are too many View in 3D controls currently being shown. ##LINK0## Read our documentation ##/LINK0## for more information.\",\"PCF_3DViewer_Error_CannotUseCompressedFolders\":\"Compressed folders are not supported\",\"PCF_3DViewer_Error_CannotUseCompressedFoldersDescription\":\"3D models must be in the GLB, OBJ, or STL formats.\",\"PCF_3DViewer_Error_UnexpectedMagicNumber\":\"Invalid 3D model\",\"PCF_3DViewer_Error_UnexpectedMagicNumberDescription\":\"Check your model source file. The file is corrupt or not a valid GLB file.\",\"PCF_3DViewer_Error_ZeroFileSize\":\"File is empty\",\"PCF_3DViewer_Error_ZeroFileSizeDescription\":\"The 3D model file is empty.\",\"PCF_ErrorHelper_GenericArError\":\"Error encountered while attempting to display in mixed reality\",\"PCF_3DViewer_SourceIntroMessage\":\"Set the Source property to easily add 3D content. Source can be a URL, an attachment, or media from a data connector. Click to learn more.\",\"PCF_3DViewer_AriaSVGImage\":\"Error Cube with an X\",\"PCF_3DViewer_BabylonCanvasAriaLabel\":\"Interactive canvas to view and manipulate a 3D model, with alt text: {0}.\",\"PCF_3DViewer_PercentSign\":\"%\",\"PCF_3DViewer_Reset\":\"Reset\",\"PCF_3DViewer_ResetDescription\":\"Reset the model back to the initial position\",\"PCF_3DViewer_Error_Offline\":\"Offline\",\"PCF_3DViewer_Error_OfflineDescription\":\"Cannot access your content. Check your internet connection.\",\"PCF_3DViewer_Error_CreateForm\":\"Upload File\",\"PCF_3DViewer_Error_CreateFormDescription\":\"This record hasn't been created yet. To view content, create this record\",\"PCF_3DViewer_Error_FileTooLarge\":\"File Too Large\",\"PCF_3DViewer_Error_FileTooLargeDescription\":\"The uploaded file is too large, ##LINK0## learn how to optimize your content. ##/LINK0##\",\"PCF_3DViewer_LongLoadLearnMore\":\"We're loading your model. If this is taking longer than expected, you might need to optimize your model for mixed reality. Click here to learn more.\",\"PCF_3DViewer_HangOnLargeFile\":\"Hang on, we are loading a large file ({0} downloaded)\",\"PCF_3DViewer_FinishingUp\":\"Finishing up ({0} downloaded)\",\"Keyboard_Camera_Aria_PanLeft\":\"Move model right\",\"Keyboard_Camera_Aria_PanRight\":\"Move model left\",\"Keyboard_Camera_Aria_PanUp\":\"Move model down\",\"Keyboard_Camera_Aria_PanDown\":\"Move model up\",\"Keyboard_Camera_Aria_RotateLeft\":\"Rotate model clockwise\",\"Keyboard_Camera_Aria_RotateRight\":\"Rotate model counter clockwise\",\"Keyboard_Camera_Aria_TumbleUp\":\"Rotate model backward\",\"Keyboard_Camera_Aria_TumbleDown\":\"Rotate model forward\",\"Keyboard_Camera_Aria_ZoomIn\":\"Zoom in on model\",\"Keyboard_Camera_Aria_ZoomOut\":\"Zoom out on model\",\"Keyboard_Camera_Aria_Reset\":\"Resetting camera on model\",\"Pin_Select_Aria\":\"Pin selected at coordinate X {0}. Y {1}. Z {2}.\",\"Enable_Marker_Detection\":\"Enable marker detection\",\"Enable_Marker_Detection_Description\":\"Detect markers placed in your physical space for accurate placement of media\",\"Marker_Detection_LearnMore\":\"Marker detection requires that you put a physical marker in your space. Click here to get the marker.\",\"Marker_Detection_Update_Required\":\"Marker detection in mixed reality is not supported on this version of Power Apps. Install the latest version from the store to enable this feature.\",\"PCF_3DViewer_Bytes\":\"bytes\",\"PCF_3DViewer_KB\":\"KB\",\"PCF_3DViewer_MB\":\"MB\",\"PCF_3DViewer_GB\":\"GB\",\"StudioPreview_NavBar_Title\":\"View {0}\",\"StudioPreview_NavBar_CloseButton_AccessibilityLabel\":\"Close\",\"PCF_3DViewer_Media\":\"Media\"}}}",
+      "Type": 3
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 5,
+      "ModifiedPath": "",
+      "Path": "/PCF/fluentui-react.js",
+      "Type": 0
+    }
+  ],
+  "Version": "1.2.22"
+}
