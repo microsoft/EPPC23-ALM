@@ -3,8 +3,8 @@
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Smithsonian 3D",
-      "iconUri": "https://pafeblobprodam.blob.core.windows.net/20230615t000000z88c8e932dcfb4629ba9e25311ef5c5e4/ppa_5Fsmithsonian-203d_iconblob.Png?sv=2018-03-28&sr=c&sig=%2BkPmXmwsQzoy0xEqXzhqht4i%2FEtodum4A1%2FCTjwSGPQ%3D&se=2023-06-21T16%3A00%3A00Z&sp=rl",
-      "id": "/providers/microsoft.powerapps/apis/shared_ppa-5fsmithsonian-203d-5fded6149d4f5103cf",
+      "iconUri": "https://pafeblobprodam.blob.core.windows.net/20230620t000000zf7284ff9a6564b7dbee7dfd10624fc67/ppa_5Fsmithsonian-203d_iconblob.Png?sv=2018-03-28&sr=c&sig=9uO%2FGsYvbVwyuhjpRskhVR3r7MaT95ZbTDRMw88ZzV8%3D&se=2023-06-25T20%3A00%3A00Z&sp=rl",
+      "id": "/providers/microsoft.powerapps/apis/shared_ppa-5fsmithsonian-203d-5f51e4796dda6a1137",
       "isCustomApiConnection": true,
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -17,28 +17,25 @@
     "dependents": [],
     "id": "003c10bb-0e9a-4c4b-805d-593afc9cb727"
   },
-  "501594da-897b-4442-bfaf-f5c42ba55b97": {
+  "252b8146-d265-44fb-a59e-7b808440cd06": {
     "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "9e9a9b94-4038-4436-b843-b6897f60cb06"
-    ],
-    "id": "501594da-897b-4442-bfaf-f5c42ba55b97"
-  },
-  "9e9a9b94-4038-4436-b843-b6897f60cb06": {
-    "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "Excel",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/excel/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excel"
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "7a488afa-36dc-4769-bcee-63f6fa791c01": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "7a488afa-36dc-4769-bcee-63f6fa791c01"
+        }
+      }
     },
     "datasets": {
-      "b!F5trxW5DUkCAZ2g93lUQ_8AM_RIfwEVDvKG0m-nFD32BUd0ftpqNSYXR1d6LoHJi.01SRHTBBKZO5ZJE7GQZJDI4DVGPFBM55MR": {
+      "b!WxricZaBqEWV7QIOj1cJ2e7vLsRUvk5Cn1I8Ib5GzVeTICDAACgBTKfV3FECa3tR.01RZU4S2LYSO6DY5HOIJGKRE4VLT6BOSWK": {
         "dataSources": {
           "Coral": {
             "tableName": "Coral"
@@ -54,9 +51,26 @@
       "Occupants"
     ],
     "dependencies": {
-      "fileSource": "501594da-897b-4442-bfaf-f5c42ba55b97"
+      "fileSource": "7a488afa-36dc-4769-bcee-63f6fa791c01"
     },
     "dependents": [],
-    "id": "9e9a9b94-4038-4436-b843-b6897f60cb06"
+    "id": "252b8146-d265-44fb-a59e-7b808440cd06"
+  },
+  "7a488afa-36dc-4769-bcee-63f6fa791c01": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "252b8146-d265-44fb-a59e-7b808440cd06"
+    ],
+    "id": "7a488afa-36dc-4769-bcee-63f6fa791c01"
   }
 }
