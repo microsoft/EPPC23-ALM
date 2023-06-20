@@ -1,0 +1,96 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/ppa-5fsmithsonian-203d-5fa201f66043ff49d9" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Defaulttitle" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Default title"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/ppa-5fsmithsonian-203d-5fa201f66043ff49d9" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="FileSearch_responses_200_def_rows_def_items_def_title_def" />
+      <string name="FileSearch_responses_200_def_rows_def_items_def_content_def_usage_def" />
+      <string name="FileSearch_responses_200_def_rows_def_items_def_content_def_quality_def" />
+      <string name="FileSearch_responses_200_def_rows_def_items_def_content_def_uri_def" />
+      <string name="FileSearch_responses_200_def_rows_def_items_def_content_def_file_type_def" />
+      <string name="FileSearch_responses_200_def_rows_def_items_def_content_def_draco_compressed_def" />
+      <object name="FileSearch_responses_200_def_rows_def_items_def_content_def">
+        <property name="usage" type="string" />
+        <property name="quality" type="string" />
+        <property name="uri" type="string" />
+        <property name="file_type" type="string" />
+        <property name="draco_compressed" type="string" />
+      </object>
+      <object name="FileSearch_responses_200_def_rows_def_items_def">
+        <property name="title" type="string" />
+        <property name="content" typeRef="FileSearch_responses_200_def_rows_def_items_def_content_def" />
+      </object>
+      <array typeRef="FileSearch_responses_200_def_rows_def_items_def" name="FileSearch_responses_200_def_rows_def" />
+      <integer name="FileSearch_responses_200_def_rowCount_def" />
+      <string name="FileSearch_responses_200_def_message_def" />
+      <object name="FileSearch_responses_200_def">
+        <property name="rows" typeRef="FileSearch_responses_200_def_rows_def" />
+        <property name="rowCount" type="integer" />
+        <property name="message" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/ppa-5fsmithsonian-203d-5fa201f66043ff49d9">
+    <resource path="/{connectionId}/api/v1.0/content/file/search">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="FileSearch" actionName="FileSearch" visibility="important" siena:isDeprecated="false">
+        <doc title="File search&#xA;This action searches the Smithsonian 3D API and fetches content based on a query/filter." />
+        <request>
+          <param style="query" name="q" type="xs:string">
+            <doc title="The query term you would like to issue. Examples: Mandible, Space Shuttle, Crab." />
+          </param>
+          <param style="query" name="file_type" type="xs:string">
+            <doc title="The file type to filter results against." />
+            <option value="jpg" />
+            <option value="glb" />
+            <option value="ply" />
+            <option value="zip" />
+          </param>
+          <param style="query" name="quality" type="xs:string">
+            <doc title="The quality type to filter results against." />
+            <option value="Low" />
+            <option value="Medium" />
+            <option value="High" />
+            <option value="Thumb" />
+            <option value="Low_resolution" />
+            <option value="Medium_resolution" />
+            <option value="Full_resolution" />
+            <option value="Water_tight" />
+          </param>
+          <param style="query" name="model_type" type="xs:string">
+            <doc title="The model type to filter results against." />
+            <option value="glb" />
+            <option value="ply" />
+            <option value="obj" />
+            <option value="gltf" />
+            <option value="f3z" />
+            <option value="blend" />
+            <option value="stl" />
+          </param>
+          <param style="query" name="gltf_orientation_compliant" type="xs:boolean">
+            <doc title="Restrict results to glTF orientation compliant files." />
+          </param>
+          <param style="query" name="draco_compressed" type="xs:boolean">
+            <doc title="Restrict results to Draco compressed files." />
+          </param>
+          <param style="query" name="start" type="xs:long" default="0">
+            <doc title="The start of the result set." />
+          </param>
+          <param style="query" name="rows" type="xs:long" default="10">
+            <doc title="The number of rows in a result set (maximum is 100)." />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:FileSearch_responses_200_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_ppa-5fsmithsonian-203d-5fa201f66043ff49d9" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

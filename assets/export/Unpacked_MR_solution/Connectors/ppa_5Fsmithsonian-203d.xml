@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>8fdeedcc-b21b-4f9b-9041-b3c74267bf19</connectorid>
+  <description></description>
+  <displayname>Smithsonian 3D</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>ppa_5Fsmithsonian-203d</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/ppa_5Fsmithsonian-203d_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/ppa_5Fsmithsonian-203d_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/ppa_5Fsmithsonian-203d_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/ppa_5Fsmithsonian-203d_iconblob.Png</iconblob>
+</Connector>
