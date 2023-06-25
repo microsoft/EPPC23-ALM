@@ -25,6 +25,8 @@ In this task, you will be uploading a couple of assets to your OneDrive. The sol
 
 3. Once inside OneDrive, select **My files** on the left navigation bar.
 
+    ![My files screenshot](assets/my-files-onedrive.png)
+
     **My files** is where you'll be uploading the OneDrive content to. Let's go ahead and download these assets now.
 
 4. In a new browser tab, navigate to the [Coral Collection.zip](../assets/onedrive/Coral%20Collection.zip) folder in this repository
@@ -237,6 +239,8 @@ Now that we know about the ins and outs of a solution, including how to interact
 
 8. Dismiss the **Welcome to Power Apps Studio** dialog by clicking **Skip**
 
+    ![Skip dialog](assets/skip-dialog.png)
+
     You should now be on the home page of the **Mixed Reality App** Canvas App.
 
     ![Mixed Reality App](assets/mixed-reality-app.png)
@@ -247,7 +251,7 @@ Now that we know about the ins and outs of a solution, including how to interact
 
     ![Remove Coral](assets/remove-coral.png)
 
-10. Click on the **Data** icon in the left navigation bar, then click on the **More action** icon next to "Occupants" and then select **Remove**
+10. Then click on the **More action** icon next to "Occupants" and then select **Remove**
 
     ![Remove Occupants](assets/remove-occupants.png)
 
