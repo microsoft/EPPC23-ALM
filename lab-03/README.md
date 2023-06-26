@@ -87,7 +87,7 @@ These were all the changes you had to do for the MR app. Let's move onto the nex
 
 In this task, you will learn how to create a new branch in GitHub. 
 
-1. Go back to your forked environment
+1. Go back to your forked repository
   
 1. Open up your Codespace by selecting **Code** and selecting your Codespace
   
@@ -212,6 +212,8 @@ Before you commit the changes, you of course want to make sure there are no crit
   
     ![](./assets/checker-sarif-error.png)
 
+    That is correct, because the formula that was used for navigation didn't work correctly. This is a good example of how you can catch errors before you deploy a solution to others.
+
 The SARIF-viewer tells us that we can review the issues in design mode of the app. We won't do that now, but these issues can be found by selecting the **App checker** icon, and selecting the **chevron ＞** next to Formulas.
 
 ![](./assets/checker-app-checker-formulas.png)
@@ -247,8 +249,6 @@ In this lab, you will commit the changes that were done to the new branch, so th
 7. And then on the popup dialog, click **Ok** to confirm that this action will pull and push commits from and to "origin/main"
 
     Now our codespace is synced with our forked repository.
-  
-That is correct, because the formula that was used for navigation didn't work correctly. This is a good example of how you can catch errors before you deploy a solution to others.
 
 ## Task 06: Create a pull request (PR)
 
