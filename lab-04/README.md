@@ -110,7 +110,7 @@ A sidebar will be opened, where you can enter the details of the `Dev` environme
 1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
 1. Select the `Save and Close` button on the bottom of your sidebar
 
-If all went well, you'll see the following screen:
+If all went well, you'll see the following screen (*Refresh* the page if you don't see it):
 
 ![](./assets/create-pipeline-new-development-env-saved.png)
 
@@ -124,8 +124,8 @@ This will open a new sidebar, where you can enter details about your first deplo
 
 1. Add `Deploy to test` as the Name
 1. We're leaving the Description and Previous Deployment stage empty, because we don't have a previous deployment stage, since this is our first stage
-1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new development environment
-1. Select `New Development Environment`
+1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new deployment environment
+1. Select `New Deployment Environment`
 
 ![](./assets/create-pipeline-new-deployment-stage-details.png)
 
@@ -149,7 +149,7 @@ In the sidebar, make sure to add the following details:
 
 1. Select yourself as the owner by focusing on the owner field and adding the email address of your account.
 1. Select the `Save and Close` button on the bottom of your sidebar
-1. Select `Save` again to save the deployment stage as well
+1. Select `Save and Close` again to save the deployment stage as well
 
 Make sure to select the `New Deployment Stage` button again to add a second deployment stage: `Deploy to prod`.
 
@@ -158,8 +158,8 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 1. Add `Deploy to prod` as the `Name`
 1. Leave the `Description` empty
 1. Focus on the `Previous Deployment Stage` and search for the `Deploy to test` stage. After you have found that stage, select it
-1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new development environment
-1. Select `New Development Environment`
+1. Set focus to the input box next to target deployment environment. This will open up a small popup which enables you to add a new deployment environment
+1. Select `New deployment Environment`
 
 > **Note:**  
 > There is a setting field called `Pre Deployment Step Required`. We're not using that in this case, but think about what could that be used for. During the workshop, the trainers will show an example of it.
@@ -185,7 +185,7 @@ Make sure to select the `New Deployment Stage` button again to add a second depl
 
     ![](./assets/create-pipeline-deploy-to-prod-env.png)
 
-1. Select `Save` again to save the deployment stage as well
+1. Select `Save and Close` again to save the deployment stage as well
 
 ## Task 03: Run the first deployment to the Test environment
 
@@ -314,8 +314,8 @@ For the deployment to test, you have to switch to your `Dev` environment. Make s
         ![](./assets/run-deploy-to-test-open-app.png)
 1. When the app is opened, you will have to allow the connections to connect to both OneDrive for Business as well as the Smithsonian 3D connector. Make sure to select the purple `Allow` button
         ![](./assets/run-deploy-to-test-allow-connections.png)
-1. In the app, you will find two buttons:
-        `Corals and Coral Reefs` and `Smithsonian 3D Search`
+1. In the app, you will find three buttons:
+        `Corals and Coral Reefs`, `Smithsonian 3D Search`, and `Tutorial Screen`.
         Select the `Corals and Coral Reefs` button
         ![](./assets/run-deploy-to-test-select-corals.png)
 1. Next, select the first coral to check if the coral 3D object works

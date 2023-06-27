@@ -45,7 +45,12 @@ With the credentials that were provided to you, let's log into the account you a
 
 1. Go to [make.powerapps.com](https://make.powerapps.com)
 2. On the sign-in screen, enter the email address that was provided to you and then click **Next**
+
+    ![Sign in screen](assets/pa-sign-in-email.png)
+
 3. Then enter the password and click **Sign in**
+    
+    ![Sign in screen](assets/pa-sign-in-password.png)
 
 4. If you're prompted to stay signed in, click **Yes**
 
@@ -141,6 +146,8 @@ The Creator Kit is not available out of the box, so we will need to install it i
 
 5. Select the **I agree to the terms of service** checkbox and then click **Install**
 
+    ![Install Creator Kit Confirmation](assets/install-creator-kit-confirmation.png)
+
     This process may take a couple of minutes, you can refresh the page by selecting the **Refresh** button in the command bar at the top.
 
     Once the installation is complete, you should see the Creator Kit in the list of apps with the Installed Status.
@@ -203,7 +210,7 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
 
     ![TODO: Screenshot of search for Power Platform Tools](assets/power-platform-tools-search-and-religion.png)
 
-    After installing the **Power Platform Tools** extension, you will be prompted to "Select File Icon Theme". Do whatever you want.
+    After installing the **Power Platform Tools** extension, you will be prompted to "Select File Icon Theme". Select any of the 2 options.
 
     With the Power Platform Tools extension installed, you can now interact with the Power Platform from within Visual Studio Code. But before we can do that, we need to connect to a Power Platform environment.
 
@@ -218,6 +225,8 @@ The Power Platform Tools extension is a Visual Studio Code extension that allows
     ![Screenshot of no auth profiles found](assets/no-auth-profiles-found.png)
 
 2. If you don't see it open already, let's open the Terminal. Click on the Burger menu icon in the top left corner and then hover over **Terminal** and then click **New Terminal**
+
+    ![Screenshot of new terminal menu](assets/new-terminal.png)
 
     A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
 
