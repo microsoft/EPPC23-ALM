@@ -44,6 +44,10 @@ In this task, you will learn how to create an approval flow that will handle the
 1. Check if you are in the `Prod` environment and if not, switch to that environment
   
     ![](./assets/check-environment-prod.png)
+
+1. Select **Flows** in the left navigation pane
+
+    ![](./assets/select-flows.png) 
   
 1. Select **Get started** in the welcome pop-up
 
@@ -123,7 +127,7 @@ In this task, you will learn how to create an approval flow that will handle the
 
 1. Add the text `Approve` to the other input field of the condition
 
-1. Select the **New step** button in the **If yes** part of the condition and add the **Perform an unbound action** action from the Microsoft Dataverse connector
+1. Select the **Add an action** button in the **If yes** part of the condition and add the **Perform an unbound action** action from the Microsoft Dataverse connector
     
     Select **UpdatePreDeploymentStepStatus** as Action Name.  
     
@@ -140,7 +144,7 @@ In this task, you will learn how to create an approval flow that will handle the
     
     Add the **ActionInputs StageRunId** dynamic content field from the **When an action is performed** trigger as StageRunId.  
 
-1. Select the **New step** button in the **If no** part of the condition and add the **Perform an unbound action** action from the Microsoft Dataverse connector
+1. Select the **Add an action** button in the **If no** part of the condition and add the **Perform an unbound action** action from the Microsoft Dataverse connector
 
     Select **UpdatePreDeploymentStepStatus** as Action Name. 
 
