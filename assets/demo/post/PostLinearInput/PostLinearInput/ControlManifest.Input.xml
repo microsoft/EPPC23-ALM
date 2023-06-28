@@ -32,8 +32,9 @@
     -->
     <resources>
       <code path="index.ts" order="1"/>
-      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      
       <css path="css/PostLinearInput.css" order="1" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
       <resx path="strings/PostLinearInput.1033.resx" version="1.0.0" />
       -->
     </resources>
