@@ -95,7 +95,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -113,8 +113,7 @@
     "FileID": "58b2b194-5809-402d-9d9f-0b675ff99c54",
     "Id": "58b2b194-5809-402d-9d9f-0b675ff99c54",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "DevOps Demo App",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0
@@ -131,6 +130,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "ScreenMain",
+    "ScreenTutorial"
   ]
 }
