@@ -1,0 +1,11 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Activities (Forms)",
+      "Values": {
+        "Activities Dashboard": "a4640db1-4962-4e79-92c6-690e627924d7"
+      }
+    }
+  ]
+}
