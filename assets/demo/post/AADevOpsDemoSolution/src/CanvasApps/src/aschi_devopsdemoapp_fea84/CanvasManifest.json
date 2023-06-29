@@ -130,6 +130,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "ScreenMain"
+    "ScreenMain",
+    "ScreenTutorial"
   ]
 }

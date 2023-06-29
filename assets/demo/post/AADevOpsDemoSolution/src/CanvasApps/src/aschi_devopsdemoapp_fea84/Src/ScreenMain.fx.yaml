@@ -94,3 +94,12 @@ ScreenMain As screen:
         Y: =134
         ZIndex: =3
 
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =94
+        OnSelect: =Navigate(ScreenTutorial)
+        Width: =268
+        X: =20
+        Y: =25
+        ZIndex: =4
+
