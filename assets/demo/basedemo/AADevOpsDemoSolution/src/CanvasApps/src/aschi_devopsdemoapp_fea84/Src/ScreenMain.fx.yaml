@@ -1,0 +1,105 @@
+ScreenMain As screen:
+
+    BadgeCanvas1 As Badge:
+        Content: ="AA"
+        DisplayMode: =DisplayMode.Edit
+        Height: =74
+        Width: =76
+        X: =535
+        Y: =25
+        ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Flexible_NewsFeed_ver5.0'":
+        DelayItemLoading: =true
+        Items: =Filter(Activities, 'Activities (Views)'.'My Activities')
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Y: =183
+        ZIndex: =1
+
+        Title2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Subject
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2.Width - 80
+            X: =32
+            Y: =32
+            ZIndex: =1
+
+        Body2 As label:
+            AutoHeight: =true
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Start Date'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =32
+            Y: =Title2.Y + Title2.Height + 8
+            ZIndex: =2
+
+        Image2 As image:
+            Height: =33
+            Image: ='Microsoft_Power_Platform_Icons_PowerApps - Copy'
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =54
+            X: =585
+            Y: =32
+            ZIndex: =3
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Max(Parent.TemplateHeight - 1, Body2.Y + Body2.Height + 10)
+            ZIndex: =4
+
+        "Progress2 As 'Progress Bar'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =25
+            Width: =114
+            X: =441
+            Y: =40
+            ZIndex: =5
+
+    RectangleTitle As rectangle:
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =49
+        Width: =640
+        Y: =134
+        ZIndex: =2
+
+    LabelTitle As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Height: =49
+        Size: =21
+        Text: ="My Open Tasks"
+        Width: =640
+        Y: =134
+        ZIndex: =3
+
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =94
+        OnSelect: =Navigate(ScreenTutorial)
+        Width: =268
+        X: =20
+        Y: =25
+        ZIndex: =4
+
