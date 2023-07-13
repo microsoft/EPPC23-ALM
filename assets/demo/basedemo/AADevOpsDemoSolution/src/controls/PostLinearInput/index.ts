@@ -7,7 +7,7 @@ export class PostLinearInput implements ComponentFramework.StandardControl<IInpu
      */
     constructor()
     {
-
+   
     }
 
     /**
