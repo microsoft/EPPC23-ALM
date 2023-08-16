@@ -8,5 +8,5 @@
       "README.md"
     ]
   },
-  "postCreateCommand": "pac auth create"
+  "postAttachCommand": "pac auth create"
 }
