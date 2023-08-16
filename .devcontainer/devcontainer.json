@@ -1,10 +1,11 @@
 {
-  "customizations": {
-    "vscode": {
-      "extensions": [ "microsoft-IsvExpTools.powerplatform-vscode" ]
-    },
-    "openFiles": [
-      "README.md"
-    ]
-  }
+    "customizations": {
+        "vscode": {
+          "extensions": ["microsoft-IsvExpTools.powerplatform-vscode"]
+        },
+        "openFiles": [
+          "README.md"
+        ]
+      },
+      "postCreateCommand": "pac auth create"
 }
