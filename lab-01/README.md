@@ -192,11 +192,12 @@ A codespace is a cloud-hosted development environment you can access from anywhe
 
     ![TODO: Add image of code button](assets/repo-code-button.png)
 
-
 2. On the **Code** pop up, select the **Codespaces** tab
 3. Click **Create codespace on main**
 
     A codespace will now be created for you in a new tab. This will take a few seconds. But once it's done, you will have a fully functional Visual Studio Code environment in your browser. You can now start developing!
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/EPPC23-ALM)
 
 ## Task 8: Install the Power Platform Tools extension
 
