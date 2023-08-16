@@ -1,11 +1,12 @@
 {
-    "customizations": {
-        "vscode": {
-          "extensions": ["microsoft-IsvExpTools.powerplatform-vscode"]
-        },
-        "openFiles": [
-          "README.md"
-        ]
-      },
-      "postCreateCommand": "pac auth create"
+  "name": "EPPC23-ALM",
+  "customizations": {
+    "vscode": {
+      "extensions": [ "microsoft-IsvExpTools.powerplatform-vscode" ]
+    },
+    "openFiles": [
+      "README.md"
+    ]
+  },
+  "postCreateCommand": "pac auth create"
 }
