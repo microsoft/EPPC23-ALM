@@ -1,0 +1,10 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [ "microsoft-IsvExpTools.powerplatform-vscode" ]
+    },
+    "openFiles": [
+      "README.md"
+    ]
+  }
+}
