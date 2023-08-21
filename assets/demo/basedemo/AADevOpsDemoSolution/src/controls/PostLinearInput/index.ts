@@ -21,6 +21,8 @@ export class PostLinearInput implements ComponentFramework.StandardControl<IInpu
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
     {
         // Add control initialization code
+        //Changes
+        //Changes uin branch
     }
 
 
