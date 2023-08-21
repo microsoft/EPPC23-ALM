@@ -117,13 +117,24 @@ ScreenMain As screen:
         ZIndex: =3
 
     TextCanvasTitle As Text:
-        Alignment: ='TextCanvas.Alignment'.Center
+        AutoHeight: =false
         DisplayMode: =DisplayMode.Edit
         Height: =33
         Size: =24
         Text: ="Power Tasks"
+        VerticalAlign: ="Middle"
         Width: =258
         X: =0
         Y: =25
         ZIndex: =4
+
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =Navigate(ScreenTutorial)
+        Text: ="Tutorial"
+        Width: =96
+        X: =285
+        Y: =1075
+        ZIndex: =5
 

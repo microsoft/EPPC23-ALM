@@ -1,7 +1,7 @@
 {
   "AuthConfigProperties": [
     {
-      "Alignment": {
+      "Align": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
@@ -12,24 +12,13 @@
         "Type": 0,
         "WizardStep": null
       },
-      "DisplayMode": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 2,
-        "SectionName": null,
-        "Type": 27,
-        "WizardStep": null
-      },
       "Height": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
         "PropertyGroupName": "Size",
         "PropertyKind": 2,
-        "SectionIndex": 3,
+        "SectionIndex": 2,
         "SectionName": null,
         "Type": 0,
         "WizardStep": null
@@ -78,17 +67,6 @@
         "Type": 0,
         "WizardStep": null
       },
-      "Truncate": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 1,
-        "SectionName": null,
-        "Type": 0,
-        "WizardStep": null
-      },
       "Underline": {
         "EnabledForFlyout": false,
         "HelperUI": null,
@@ -98,6 +76,17 @@
         "SectionIndex": 1,
         "SectionName": null,
         "Type": 36,
+        "WizardStep": null
+      },
+      "VerticalAlign": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 1,
+        "SectionName": null,
+        "Type": 0,
         "WizardStep": null
       },
       "Weight": {
@@ -117,7 +106,7 @@
         "Hidden": false,
         "PropertyGroupName": "Size",
         "PropertyKind": 2,
-        "SectionIndex": 3,
+        "SectionIndex": 2,
         "SectionName": null,
         "Type": 0,
         "WizardStep": null
@@ -139,7 +128,7 @@
         "Hidden": false,
         "PropertyGroupName": "Position",
         "PropertyKind": 2,
-        "SectionIndex": 3,
+        "SectionIndex": 2,
         "SectionName": null,
         "Type": 0,
         "WizardStep": null
@@ -150,20 +139,11 @@
         "Hidden": false,
         "PropertyGroupName": "Position",
         "PropertyKind": 2,
-        "SectionIndex": 3,
+        "SectionIndex": 2,
         "SectionName": null,
         "Type": 0,
         "WizardStep": null
       }
-    }
-  ],
-  "CommonEvents": [
-    {
-      "Description": "",
-      "DisplayName": "OnChange",
-      "Hidden": false,
-      "IsPrimaryInput": false,
-      "Name": "OnChange"
     }
   ],
   "ControlConstructor": "TextCanvas",
@@ -247,31 +227,6 @@
     },
     {
       "Category": "design",
-      "DefaultValue": "32",
-      "Description": "",
-      "DescriptionResourceString": "",
-      "DisplayName": "Height",
-      "DisplayNameResourceString": "Height",
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Height",
-      "NullDefaultValue": "0",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "32",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 2,
-      "Usage": 2,
-      "WebDefaultValue": "32"
-    },
-    {
-      "Category": "design",
       "DefaultValue": "true",
       "Description": "",
       "DescriptionResourceString": "",
@@ -325,224 +280,6 @@
   "Properties": [
     {
       "Category": "data",
-      "DefaultValue": "Start",
-      "Description": "Display text using the selected text alignment.",
-      "DescriptionResourceString": "TextCanvas_Alignment_Desc",
-      "DisplayName": "Text alignment",
-      "DisplayNameResourceString": "TextCanvas_Alignment",
-      "EnumValues": [
-        {
-          "Description": "Start",
-          "DisplayName": "Start",
-          "IsDefaultValue": true,
-          "Name": "Start",
-          "Value": "Start"
-        },
-        {
-          "Description": "End",
-          "DisplayName": "End",
-          "IsDefaultValue": false,
-          "Name": "End",
-          "Value": "End"
-        },
-        {
-          "Description": "Center",
-          "DisplayName": "Center",
-          "IsDefaultValue": false,
-          "Name": "Center",
-          "Value": "Center"
-        },
-        {
-          "Description": "Justify",
-          "DisplayName": "Justify",
-          "IsDefaultValue": false,
-          "Name": "Justify",
-          "Value": "Justify"
-        }
-      ],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Alignment",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "Start",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 0,
-      "WebDefaultValue": "Start"
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "Span",
-      "Description": "Display as one of text control HTML element types.",
-      "DescriptionResourceString": "TextCanvas_As_Desc",
-      "DisplayName": "As",
-      "DisplayNameResourceString": "TextCanvas_As",
-      "EnumValues": [
-        {
-          "Description": "Heading1",
-          "DisplayName": "Heading1",
-          "IsDefaultValue": false,
-          "Name": "Heading1",
-          "Value": "Heading1"
-        },
-        {
-          "Description": "Heading2",
-          "DisplayName": "Heading2",
-          "IsDefaultValue": false,
-          "Name": "Heading2",
-          "Value": "Heading2"
-        },
-        {
-          "Description": "Heading3",
-          "DisplayName": "Heading3",
-          "IsDefaultValue": false,
-          "Name": "Heading3",
-          "Value": "Heading3"
-        },
-        {
-          "Description": "Heading4",
-          "DisplayName": "Heading4",
-          "IsDefaultValue": false,
-          "Name": "Heading4",
-          "Value": "Heading4"
-        },
-        {
-          "Description": "Heading5",
-          "DisplayName": "Heading5",
-          "IsDefaultValue": false,
-          "Name": "Heading5",
-          "Value": "Heading5"
-        },
-        {
-          "Description": "Heading6",
-          "DisplayName": "Heading6",
-          "IsDefaultValue": false,
-          "Name": "Heading6",
-          "Value": "Heading6"
-        },
-        {
-          "Description": "Paragraph",
-          "DisplayName": "Paragraph",
-          "IsDefaultValue": false,
-          "Name": "Paragraph",
-          "Value": "Paragraph"
-        },
-        {
-          "Description": "Preformatted",
-          "DisplayName": "Preformatted",
-          "IsDefaultValue": false,
-          "Name": "Preformatted",
-          "Value": "Preformatted"
-        },
-        {
-          "Description": "Span",
-          "DisplayName": "Span",
-          "IsDefaultValue": true,
-          "Name": "Span",
-          "Value": "Span"
-        }
-      ],
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "As",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "Span",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 0,
-      "WebDefaultValue": "Span"
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "false",
-      "Description": "Display text using the italic font style.",
-      "DescriptionResourceString": "TextCanvas_Italic_Desc",
-      "DisplayName": "Italic",
-      "DisplayNameResourceString": "TextCanvas_Italic",
-      "EnumValues": [],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Italic",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 20,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "14",
-      "Description": "Display text using the selected font sizes.",
-      "DescriptionResourceString": "TextCanvas_Size_Desc",
-      "DisplayName": "Font size",
-      "DisplayNameResourceString": "TextCanvas_Size",
-      "EnumValues": [],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Size",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 16,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "false",
-      "Description": "Display text using the strikethrough font style.",
-      "DescriptionResourceString": "TextCanvas_Strikethrough_Desc",
-      "DisplayName": "Strikethrough",
-      "DisplayNameResourceString": "TextCanvas_Strikethrough",
-      "EnumValues": [],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Strikethrough",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 20,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
       "DefaultValue": "Text",
       "Description": "Text that appears on a control.",
       "DescriptionResourceString": "TextCanvas_Text_Desc",
@@ -568,11 +305,11 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "false",
-      "Description": "Display overflow text as truncated. Has no effect when Wrap is enabled.",
-      "DescriptionResourceString": "TextCanvas_Truncate_Desc",
-      "DisplayName": "Truncate",
-      "DisplayNameResourceString": "TextCanvas_Truncate",
+      "DefaultValue": "14",
+      "Description": "Display text using the selected font sizes.",
+      "DescriptionResourceString": "TextCanvas_Size_Desc",
+      "DisplayName": "Font size",
+      "DisplayNameResourceString": "TextCanvas_Size",
       "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
@@ -581,39 +318,14 @@
       "IsPrimaryInput": false,
       "IsPrimaryOutput": false,
       "IsResettable": false,
-      "Name": "Truncate",
+      "Name": "Size",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PhoneDefaultValue": "",
       "Required": false,
       "ShouldAutoBind": false,
-      "Type": 20,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "false",
-      "Description": "Display text using the underline font style.",
-      "DescriptionResourceString": "TextCanvas_Underline_Desc",
-      "DisplayName": "Underline",
-      "DisplayNameResourceString": "TextCanvas_Underline",
-      "EnumValues": [],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "Name": "Underline",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 20,
-      "Usage": 0,
+      "Type": 16,
+      "Usage": 2,
       "WebDefaultValue": ""
     },
     {
@@ -667,8 +379,234 @@
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 1,
-      "Usage": 0,
+      "Usage": 2,
       "WebDefaultValue": "Regular"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Start",
+      "Description": "Display text using the selected text alignment.",
+      "DescriptionResourceString": "TextCanvas_Align_Desc",
+      "DisplayName": "Align",
+      "DisplayNameResourceString": "TextCanvas_Align",
+      "EnumValues": [
+        {
+          "Description": "Start",
+          "DisplayName": "Start",
+          "IsDefaultValue": true,
+          "Name": "Start",
+          "Value": "Start"
+        },
+        {
+          "Description": "End",
+          "DisplayName": "End",
+          "IsDefaultValue": false,
+          "Name": "End",
+          "Value": "End"
+        },
+        {
+          "Description": "Center",
+          "DisplayName": "Center",
+          "IsDefaultValue": false,
+          "Name": "Center",
+          "Value": "Center"
+        },
+        {
+          "Description": "Justify",
+          "DisplayName": "Justify",
+          "IsDefaultValue": false,
+          "Name": "Justify",
+          "Value": "Justify"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Align",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "Start",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 2,
+      "WebDefaultValue": "Start"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Middle",
+      "Description": "Display text using the selected text verlitcal alignment.",
+      "DescriptionResourceString": "TextCanvas_VerticalAlign_Desc",
+      "DisplayName": "Vertical align",
+      "DisplayNameResourceString": "TextCanvas_VerticalAlign",
+      "EnumValues": [
+        {
+          "Description": "Top",
+          "DisplayName": "Top",
+          "IsDefaultValue": false,
+          "Name": "Top",
+          "Value": "Top"
+        },
+        {
+          "Description": "Middle",
+          "DisplayName": "Middle",
+          "IsDefaultValue": true,
+          "Name": "Middle",
+          "Value": "Middle"
+        },
+        {
+          "Description": "Bottom",
+          "DisplayName": "Bottom",
+          "IsDefaultValue": false,
+          "Name": "Bottom",
+          "Value": "Bottom"
+        }
+      ],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "VerticalAlign",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "Middle",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 2,
+      "WebDefaultValue": "Middle"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "Container height will adjust to text content.",
+      "DescriptionResourceString": "TextCanvas_AutoHeight_Desc",
+      "DisplayName": "Auto height",
+      "DisplayNameResourceString": "TextCanvas_AutoHeight",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "AutoHeight",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "design",
+      "DefaultValue": "32",
+      "Description": "The height of the control.",
+      "DescriptionResourceString": "TextCanvas_Height_Desc",
+      "DisplayName": "Text height",
+      "DisplayNameResourceString": "TextCanvas_Height",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Height",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 16,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "Display text using the italic font style.",
+      "DescriptionResourceString": "TextCanvas_Italic_Desc",
+      "DisplayName": "Italic",
+      "DisplayNameResourceString": "TextCanvas_Italic",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Italic",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "Display text using the strikethrough font style.",
+      "DescriptionResourceString": "TextCanvas_Strikethrough_Desc",
+      "DisplayName": "Strikethrough",
+      "DisplayNameResourceString": "TextCanvas_Strikethrough",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Strikethrough",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "Display text using the underline font style.",
+      "DescriptionResourceString": "TextCanvas_Underline_Desc",
+      "DisplayName": "Underline",
+      "DisplayNameResourceString": "TextCanvas_Underline",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "Name": "Underline",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
     },
     {
       "Category": "data",
@@ -692,7 +630,7 @@
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 20,
-      "Usage": 0,
+      "Usage": 2,
       "WebDefaultValue": ""
     },
     {
@@ -818,21 +756,21 @@
       "IsControlSpecific": false,
       "LoadingOrder": 7,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Alignment\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Start\"},\"As\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Span\"},\"Italic\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Size\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"14\"},\"Strikethrough\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Text\"},\"Truncate\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Underline\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Weight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Regular\"},\"Wrap\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"true\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Text\"},\"Size\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"14\"},\"Weight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Regular\"},\"Align\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Start\"},\"VerticalAlign\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Middle\"},\"AutoHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Height\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"32\"},\"Italic\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Strikethrough\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Underline\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Wrap\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Alignment\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"As\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Italic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Size\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Strikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Text\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"Truncate\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Underline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Weight\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Wrap\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Text\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"Size\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Weight\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Align\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"VerticalAlign\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AutoHeight\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Height\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Italic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Strikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Underline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Wrap\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 9,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.13\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.15\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
@@ -1175,7 +1113,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_Alignment\":\"Text alignment\",\"TextCanvas_Alignment_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Alignment_Start\":\"Start\",\"TextCanvas_Alignment_End\":\"End\",\"TextCanvas_Alignment_Center\":\"Center\",\"TextCanvas_Alignment_Justify\":\"Justify\",\"TextCanvas_As\":\"As\",\"TextCanvas_As_Desc\":\"Display as one of text control HTML element types.\",\"TextCanvas_As_H1\":\"Heading1\",\"TextCanvas_As_H2\":\"Heading2\",\"TextCanvas_As_H3\":\"Heading3\",\"TextCanvas_As_H4\":\"Heading4\",\"TextCanvas_As_H5\":\"Heading5\",\"TextCanvas_As_H6\":\"Heading6\",\"TextCanvas_As_P\":\"Paragraph\",\"TextCanvas_As_Pre\":\"Preformatted\",\"TextCanvas_As_Span\":\"Span\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Truncate\":\"Truncate\",\"TextCanvas_Truncate_Desc\":\"Display overflow text as truncated. Has no effect when Wrap is enabled.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_VerticalAlign\":\"Vertical align\",\"TextCanvas_VerticalAlign_Desc\":\"Display text using the selected text verlitcal alignment.\",\"TextCanvas_VerticalAlign_Top\":\"Top\",\"TextCanvas_VerticalAlign_Middle\":\"Middle\",\"TextCanvas_VerticalAlign_Bottom\":\"Bottom\",\"TextCanvas_Height\":\"Text height\",\"TextCanvas_Height_Desc\":\"The height of the control.\",\"TextCanvas_Align\":\"Align\",\"TextCanvas_Align_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Align_Start\":\"Start\",\"TextCanvas_Align_End\":\"End\",\"TextCanvas_Align_Center\":\"Center\",\"TextCanvas_Align_Justify\":\"Justify\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_AutoHeight\":\"Auto height\",\"TextCanvas_AutoHeight_Desc\":\"Container height will adjust to text content.\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\"}}}",
       "Type": 3
     },
     {
@@ -1193,5 +1131,5 @@
       "Type": 4
     }
   ],
-  "Version": "0.0.13"
+  "Version": "0.0.15"
 }

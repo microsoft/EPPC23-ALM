@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "activitypointer",
+    "MaxGetRowsCount": 500,
     "Name": "Activities",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
