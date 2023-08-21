@@ -1,0 +1,41 @@
+"'ac8f6760-f33f-4d5c-b33f-0f87c9dabbcd' As TestSuite":
+    Description: =""
+    DisplayName: |-
+        ="Suite: Task actions"
+
+    "'e7058b95-caae-4b93-a139-d63ddaf3bbed' As TestCase":
+        Description: ="From the main screen a user is able to select a task details icon and view the correct task details"
+        DisplayName: |-
+            ="Case: View task details"
+
+        Step1 As TestStep:
+            Description: ="Select 'IconMarkDetails' in row 1 in 'GalleryTasks'"
+            Screen: =ScreenMain
+            Value: =Select(GalleryTasks, 1, IconMarkDetails)
+
+        Step2 As TestStep:
+            Description: ="Set selected task subject"
+            Value: =Set(_selectedSubject,GalleryTasks.Selected.Subject)
+
+        Step3 As TestStep:
+            Description: ="Trace selected subject"
+            Value: |-
+                =Trace("Selected tasK: " & _selectedSubject)
+
+        Step4 As TestStep:
+            Description: ="Check if details screen show the right task"
+            Value: =Assert(TextTaskTitle.Text = _selectedSubject)
+
+    "'69c21cfe-6a2d-4147-a18d-513a2f165208' As TestCase":
+        Description: ="A user can navigate back to main after viewing details"
+        DisplayName: |-
+            ="Case: Navigate from details to main screen"
+
+        Step1 As TestStep:
+            Description: ="Select back navigation icon"
+            Value: =Select(IconBack)
+
+        Step2 As TestStep:
+            Description: ="Assert that user is on main screen"
+            Value: =Assert(App.ActiveScreen.Name = ScreenMain.Name)
+

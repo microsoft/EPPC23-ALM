@@ -1,0 +1,207 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "tasks",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "task",
+    "MaxGetRowsCount": 500,
+    "Name": "Tasks",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "_regardingobjectid_value": "Regarding",
+      "{Attachments}": "Attachments",
+      "activityadditionalparams": "Additional Parameters",
+      "activityid": "Task",
+      "activitytypecode": "Activity Type",
+      "actualdurationminutes": "Duration",
+      "actualend": "Actual End",
+      "actualstart": "Actual Start",
+      "category": "Category",
+      "createdby_task": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby_task": "Created By (Delegate)",
+      "crmtaskassigneduniqueid": "Assigned Task Unique Id",
+      "description": "Description",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "isbilled": "Is Billed",
+      "isregularactivity": "Is Regular Activity",
+      "isworkflowcreated": "Is Workflow Created",
+      "lastonholdtime": "Last On Hold Time",
+      "modifiedby_task": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby_task": "Modified By (Delegate)",
+      "msdyn_task_msdyn_ocliveworkitem_msdyn_msdyn_routableobjectid": "Conversations",
+      "msdyncrm_activityid": "ActivityId",
+      "msdyncrm_associatedcustomerjourneyiteration_Task": "Customer journey iteration",
+      "msdynmkt_journeyactionid": "Journey Action Id",
+      "msdynmkt_JourneyId_Task": "Journey Id",
+      "msft_datastate": "msft_DataState",
+      "onholdtime": "On Hold Time (Minutes)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit_task": "Owning Business Unit",
+      "owningteam_task": "Owning Team",
+      "owninguser_task": "Owning User",
+      "percentcomplete": "Percent Complete",
+      "prioritycode": "Priority",
+      "processid": "Process",
+      "scheduleddurationminutes": "Scheduled Duration",
+      "scheduledend": "Due Date",
+      "scheduledstart": "Start Date",
+      "serviceid_task": "Service",
+      "sla_task_sla": "SLA",
+      "slainvokedid_task_sla": "Last SLA applied",
+      "slakpiinstance_task": "SLA KPI Instances",
+      "sortdate": "Sort Date",
+      "stageid": "(Deprecated) Process Stage",
+      "statecode": "Activity Status",
+      "statuscode": "Status Reason",
+      "subcategory": "Sub-Category",
+      "subject": "Subject",
+      "task_actioncard": "Action Cards",
+      "task_activitymonitor": "Activity monitors",
+      "Task_Annotation": "Notes",
+      "Task_AsyncOperations": "System Jobs",
+      "Task_BulkDeleteFailures": "Bulk Delete Failures",
+      "task_connections1": "Connections (task_connections1)",
+      "task_connections2": "Connections (task_connections2)",
+      "Task_DuplicateBaseRecord": "Duplicate Records (Task_DuplicateBaseRecord)",
+      "Task_DuplicateMatchingRecord": "Duplicate Records (Task_DuplicateMatchingRecord)",
+      "task_PostFollows": "Follows",
+      "task_PostRegardings": "Post Regarding",
+      "task_principalobjectattributeaccess": "Field Sharing",
+      "Task_ProcessSessions": "Process Sessions",
+      "Task_QueueItem": "Queue Items",
+      "Task_SyncErrors": "Sync Errors",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid_task": "Currency",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Tasks",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Tasks (Views)",
+    "Name": "_task_views",
+    "RelatedEntityName": "Tasks",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "20dafc19-ab36-4ab3-bce8-1f431d08748f": "Task Lookup View",
+      "2b5f5a5d-2d23-4fe7-aa58-e77995368ae7": "All Tasks",
+      "4340434c-44c5-4527-a915-d03af5d261cd": "Task Advanced Find View",
+      "6cf285aa-eb20-4277-925a-3e9735411ff0": "My Tasks",
+      "bd9e5b3b-94ae-4c4a-9e79-2e7aefee4f5e": "Task Associated View"
+    }
+  },
+  {
+    "DisplayName": "Is Billed (Tasks)",
+    "Name": "task_isbilled",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isbilled",
+        "OptionSetReferenceEntityName": "Tasks"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isbilled",
+    "RelatedEntityName": "Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Workflow Created (Tasks)",
+    "Name": "task_isworkflowcreated",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isworkflowcreated",
+        "OptionSetReferenceEntityName": "Tasks"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isworkflowcreated",
+    "RelatedEntityName": "Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Priority (Tasks)",
+    "Name": "task_prioritycode",
+    "OptionSetInfoNameMapping": {
+      "0": "Low",
+      "1": "Normal",
+      "2": "High"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "prioritycode",
+        "OptionSetReferenceEntityName": "Tasks"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "prioritycode",
+    "RelatedEntityName": "Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Activity Status (Tasks)",
+    "Name": "task_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Open",
+      "1": "Completed",
+      "2": "Canceled"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Tasks"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Tasks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Tasks)",
+    "Name": "task_statuscode",
+    "OptionSetInfoNameMapping": {
+      "2": "Not Started",
+      "3": "In Progress",
+      "4": "Waiting on someone else",
+      "5": "Completed",
+      "6": "Canceled",
+      "7": "Deferred"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Tasks"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Tasks",
+    "Type": "OptionSetInfo"
+  }
+]

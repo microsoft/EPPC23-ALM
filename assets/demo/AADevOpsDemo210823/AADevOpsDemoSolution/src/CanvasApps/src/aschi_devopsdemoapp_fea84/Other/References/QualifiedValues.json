@@ -1,0 +1,25 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Activities (Forms)",
+      "Values": {
+        "Activities Dashboard": "a4640db1-4962-4e79-92c6-690e627924d7"
+      }
+    },
+    {
+      "Kind": "default.cds_task_forms",
+      "Namespace": "Tasks (Forms)",
+      "Values": {
+        "Information": "b62ce022-cc0f-4c8c-bb29-21948f70dc74",
+        "Quick Form": "1fac7e2e-0b1c-4b6c-ab92-8af0f92dbdbc",
+        "Task": "16654191-19ad-48ca-9e46-c4b4fbdad76f",
+        "Task card": "e9c378d3-27a7-43fe-8075-322dcd7ff380",
+        "Task Card form": "5e9725e4-5449-4363-8c1c-5ae71767af34",
+        "Task for Interactive experience": "d5b4a1b2-de4f-4f86-8768-b0730001e7d1",
+        "Task quick create form.": "a1c8a6dc-8804-4019-9c78-7dbe86560ea1",
+        "Task Reference Panel": "81a89014-442c-44ad-9725-4077426a7fee"
+      }
+    }
+  ]
+}

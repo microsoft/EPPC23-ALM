@@ -1,0 +1,786 @@
+"ScreenTaskDetails As screen.'phoneLayout_Meeting_ver3.0'":
+    OnVisible: |-
+        =UpdateContext({_task:LookUp(Activities,Activity = GUID(Text(TaskId)))})
+
+    RectQuickActionBar1 As rectangle:
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1 As label:
+        Height: =88
+        PaddingLeft: =0
+        Size: =27
+        Text: ="Task details"
+        Width: =286
+        Wrap: =false
+        X: =102
+        ZIndex: =2
+
+    IconSendItem1 As icon.Send:
+        AccessibleLabel: =Self.Tooltip
+        DisabledFill: =RGBA(240, 240, 240, 0.5)
+        DisplayMode: =If(Len(Trim(TextTaskTitle.Text)) > 0 && !IsEmpty(MyPeople) && !IsBlank(_selectedMeetingTime), DisplayMode.Edit, DisplayMode.Disabled)
+        Height: =88
+        Icon: =Icon.Send
+        OnSelect: |-
+            =/*sends a meeting invite if necessary fields are filled out (attendees, subject, meeting time selection)*/
+            Set(_myCalendarName, LookUp(Office365Outlook.CalendarGetTables().value, DisplayName = "Calendar").Name);
+            Set(_myScheduledMeeting, Office365Outlook.V2CalendarPostItem(_myCalendarName,
+             TextTaskTitle.Text, Text(DateAdd(DateTimeValue(_selectedMeetingTime.StartTime), -TimeZoneOffset(), TimeUnit.Minutes)),
+             Text(DateAdd(DateTimeValue(_selectedMeetingTime.EndTime), -TimeZoneOffset(), TimeUnit.Minutes)),
+             {RequiredAttendees:Concat(MyPeople, UserPrincipalName & ";") & _selectedRoom.Address, Body: TextMeetingMessage1.Text, Location: _selectedRoom.Name, Importance: "Normal", ShowAs: "Busy", ResponseRequested: true}));
+             Concurrent(
+               Reset(TextMeetingLocation1),
+               Reset(TextTaskTitle),
+               Reset(TextMeetingMessage1),
+               Clear(MyPeople),
+               Set(_selectedMeetingTime, Blank()),
+               Set(_selectedRoomList, Blank()),
+               Set(_selectedRoom, Blank()),
+               Set(_roomListSelected, false)
+            )
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        TabIndex: =0
+        Tooltip: ="Send invite"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =3
+
+    LblInviteTab1 As label:
+        Align: =Align.Center
+        BorderColor: =Self.Color
+        Color: =If(_showDetails, LblRecipientCount1.Color, RectQuickActionBar1.Fill)
+        FocusedBorderThickness: =2
+        FontWeight: =If(_showDetails, FontWeight.Normal, FontWeight.Semibold)
+        Height: =50
+        OnSelect: =Set(_showDetails, false)
+        Size: =22
+        TabIndex: =0
+        Text: ="Invite"
+        Tooltip: ="Select to fill out meeting subject, body, and attendees"
+        Width: =283
+        Wrap: =false
+        X: =32
+        Y: =RectQuickActionBar1.Height + 16
+        ZIndex: =4
+
+    LblScheduleTab1 As label:
+        Align: =Align.Center
+        BorderColor: =Self.Color
+        Color: =If(!_showDetails, LblRecipientCount1.Color, RectQuickActionBar1.Fill)
+        FocusedBorderThickness: =2
+        FontWeight: =If(!_showDetails, FontWeight.Normal, FontWeight.Semibold)
+        Height: =50
+        OnSelect: =Set(_showDetails, true)
+        Size: =22
+        TabIndex: =0
+        Text: ="Schedule"
+        Tooltip: ="Select to fill out meeting date, duration, and location"
+        Width: =283
+        Wrap: =false
+        X: =LblInviteTab1.X + LblInviteTab1.Width + 3
+        Y: =RectQuickActionBar1.Height + 16
+        ZIndex: =5
+
+    RectHeaderSep1 As rectangle:
+        Height: =2
+        Width: =Parent.Width
+        Y: =LblInviteTab1.Y + LblInviteTab1.Height + 8
+        ZIndex: =6
+
+    RectTabSelect1 As rectangle:
+        Height: =2
+        Width: =LblInviteTab1.Width + 3
+        X: =If(_showDetails, LblScheduleTab1.X - 1.5, LblInviteTab1.X - 1.5)
+        Y: =LblInviteTab1.Y + LblInviteTab1.Height + 8
+        ZIndex: =7
+
+    LblRecipientCount1 As label:
+        Height: =50
+        Size: =21
+        Text: ="*Attendees (" &CountRows(MeetingPeopleGallery1.AllItems) & ")"
+        Visible: =!_showDetails
+        Width: =300
+        Wrap: =false
+        X: =23
+        Y: =753
+        ZIndex: =8
+
+    TextSearchBox1 As text:
+        AccessibleLabel: ="Search people or add email address. At least one recipient is required for a successful submission."
+        Default: =""
+        Height: =70
+        HintText: ="Search for people"
+        PaddingLeft: =70
+        Size: =21
+        Visible: =!_showDetails
+        Width: =576
+        X: =32
+        Y: =822
+        ZIndex: =9
+
+    SearchIcon1 As icon.Search:
+        Height: =Self.Width
+        Icon: =Icon.Search
+        PaddingBottom: =18
+        PaddingLeft: =18
+        PaddingRight: =18
+        PaddingTop: =18
+        Tooltip: ="Search"
+        Visible: =!_showDetails
+        Width: =TextSearchBox1.Height
+        X: =TextSearchBox1.X
+        Y: =TextSearchBox1.Y
+        ZIndex: =10
+
+    AddIcon1 As icon.Add:
+        Height: =TextSearchBox1.Height
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Collect(MyPeople, {DisplayName: TextSearchBox1.Text, UserPrincipalName: TextSearchBox1.Text});
+            Concurrent(
+            Reset(TextSearchBox1),
+            Set(_showMeetingTimes, false),
+            UpdateContext({_loadMeetingTimes: true}),
+            Set(_selectedMeetingTime, Blank()),
+            Set(_selectedRoom, Blank()),
+            Set(_roomListSelected, false),
+            /*
+            Uses Office365 Outlook FindMeetingTimes operation to find available meeting times given various parameters including a semicolon separated list of attendee email addresses,
+            a meeting duration (in minutes), an acceptable start and end range to find the meeting.
+            Attendee emails are retrieved from the MyPeople collection. Duration and Start/End are retrieved from their respective dropdowns, where Start is set to 8:00 AM on the date selected, and End is set to 5:00 PM on the date selected.
+            */
+            ClearCollect(MeetingTimes, AddColumns(Office365Outlook.FindMeetingTimes(
+            	{RequiredAttendees:Concat(MyPeople, UserPrincipalName & ";"), MeetingDuration:MeetingDurationSelect1.Selected.Minutes,
+            	Start:Text(DateAdd(MeetingDateSelect1.SelectedDate, 8, TimeUnit.Hours), DateTimeFormat.UTC), End:Text(DateAdd(MeetingDateSelect1.SelectedDate, 17, TimeUnit.Hours), DateTimeFormat.UTC),
+            	MaxCandidates:15, MinimumAttendeePercentage:1, IsOrganizerOptional: false, ActivityDomain: "Work"}).MeetingTimeSuggestions,
+            "StartTime", MeetingTimeSlot.Start.DateTime, "EndTime", MeetingTimeSlot.End.DateTime))
+            );
+            UpdateContext({_loadingMeetingTimes: false});
+            Set(_showMeetingTimes, true)
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        TabIndex: =0
+        Tooltip: ="Select to add user to collection"
+        Visible: |-
+            =!IsBlank(TextSearchBox1.Text) && 
+                       
+            /*Is user entry a valid email address*/
+            IsMatch(TextSearchBox1.Text, Match.Email) &&
+                       
+            Not(Trim(TextSearchBox1.Text) in MyPeople.UserPrincipalName) &&!_showDetails
+        X: =550
+        Y: =TextSearchBox1.Y
+        ZIndex: =11
+
+    MeetingPeopleGallery1 As gallery.SelectedUsersGalleryMeetingVariant:
+        AccessibleLabel: ="Attendees that have been added to the meeting. At least one attendee must be added."
+        Height: =Min(76 * RoundUp(CountRows(Self.AllItems) / 2, 0), 350)
+        Items: =MyPeople
+        Layout: =Layout.Vertical
+        ShowScrollbar: =Self.Height >= 350
+        TemplatePadding: =8
+        TemplateSize: =60
+        Visible: =!_showDetails
+        Width: =Parent.Width - Self.X * 2
+        WrapCount: =2
+        X: =32
+        Y: =TextSearchBox1.Y + TextSearchBox1.Height
+        ZIndex: =12
+
+        Separator2 As rectangle:
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+        Title1 As label:
+            FocusedBorderThickness: =2
+            Height: =MeetingPeopleGallery1.TemplateHeight
+            OnSelect: =Set(_selectedUser, ThisItem)
+            PaddingLeft: =10
+            Size: =18 * MeetingPeopleGallery1.TemplateHeight / 60
+            TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+            Text: =ThisItem.DisplayName
+            Width: =MeetingPeopleGallery1.TemplateWidth - iconRemove1.Width + 10
+            Wrap: =false
+            ZIndex: =2
+
+        iconRemove1 As icon.Cancel:
+            BorderColor: =Self.Color
+            Color: =Title1.Color
+            Height: =MeetingPeopleGallery1.TemplateHeight
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =Remove(MyPeople, LookUp(MyPeople, UserPrincipalName = ThisItem.UserPrincipalName));Concurrent(
+                Reset(TextSearchBox1),
+                Set(_showMeetingTimes, false),
+                UpdateContext({_loadMeetingTimes: true}),
+                Set(_selectedMeetingTime, Blank()),
+                Set(_selectedRoom, Blank()),
+                Set(_roomListSelected, false),
+                /*
+                Uses Office365 Outlook FindMeetingTimes operation to find available meeting times given various parameters including a semicolon separated list of attendee email addresses,
+                a meeting duration (in minutes), an acceptable start and end range to find the meeting.
+                Attendee emails are retrieved from the MyPeople collection. Duration and Start/End are retrieved from their respective dropdowns, where Start is set to 8:00 AM on the date selected, and End is set to 5:00 PM on the date selected.
+                */
+                ClearCollect(MeetingTimes, AddColumns(Office365Outlook.FindMeetingTimes(
+                	{RequiredAttendees:Concat(MyPeople, UserPrincipalName & ";"), MeetingDuration:MeetingDurationSelect1.Selected.Minutes,
+                	Start:Text(DateAdd(MeetingDateSelect1.SelectedDate, 8, TimeUnit.Hours), DateTimeFormat.UTC), End:Text(DateAdd(MeetingDateSelect1.SelectedDate, 17, TimeUnit.Hours), DateTimeFormat.UTC),
+                	MaxCandidates:15, MinimumAttendeePercentage:1, IsOrganizerOptional: false, ActivityDomain: "Work"}).MeetingTimeSuggestions,
+                "StartTime", MeetingTimeSlot.Start.DateTime, "EndTime", MeetingTimeSlot.End.DateTime))
+                );
+                UpdateContext({_loadingMeetingTimes: false});
+                Set(_showMeetingTimes, true)
+            PaddingBottom: =17 * MeetingPeopleGallery1.TemplateHeight / 60
+            PaddingLeft: =17 * MeetingPeopleGallery1.TemplateHeight / 60
+            PaddingRight: =17 * MeetingPeopleGallery1.TemplateHeight / 60
+            PaddingTop: =17 * MeetingPeopleGallery1.TemplateHeight / 60
+            TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+            Tooltip: ="Select to remove user from collection"
+            Width: =Self.Height
+            X: =MeetingPeopleGallery1.TemplateWidth - Self.Width
+            ZIndex: =3
+
+    LblMeetingSubject1 As label:
+        Height: =50
+        Size: =21
+        Text: ="*Subject"
+        Visible: =!_showDetails
+        Width: =300
+        Wrap: =false
+        X: =24
+        Y: =180
+        ZIndex: =13
+
+    TextTaskTitle As text:
+        AccessibleLabel: ="A subject is required to send an email."
+        Default: =_task.Subject
+        Height: =70
+        HintText: ="Add a subject"
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Visible: =!_showDetails
+        Width: =Parent.Width - Self.X * 2
+        X: =24
+        Y: =LblMeetingSubject1.Y + LblMeetingSubject1.Height + 6
+        ZIndex: =14
+
+    LblMeetingMessage1 As label:
+        Height: =50
+        Size: =21
+        Text: ="Notes"
+        Visible: =!_showDetails
+        Width: =300
+        Wrap: =false
+        X: =32
+        Y: =TextTaskTitle.Y + TextTaskTitle.Height + 16
+        ZIndex: =15
+
+    TextMeetingMessage1 As text:
+        AccessibleLabel: ="Add a message"
+        Default: =_task.Description
+        Height: =363
+        HintText: ="Add a message"
+        Mode: =TextMode.MultiLine
+        Size: =21
+        TabIndex: =If(PeopleBrowseGallery1.Visible, -1, 0)
+        Visible: =!_showDetails
+        Width: =Parent.Width - Self.X * 2
+        X: =32
+        Y: =LblMeetingMessage1.Y + LblMeetingMessage1.Height + 6
+        ZIndex: =16
+
+    LblMeetingDate1 As label:
+        PaddingLeft: =0
+        Size: =21
+        Text: ="*Date"
+        Visible: =_showDetails
+        Width: =120
+        Wrap: =false
+        X: =32
+        Y: =RectHeaderSep1.Y + RectHeaderSep1.Height + 16
+        ZIndex: =17
+
+    MeetingDateSelect1 As datepicker:
+        AccessibleLabel: =Self.Tooltip
+        DisplayMode: =If(IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =55
+        OnChange: =Select(Self)
+        OnSelect: |-
+            =Concurrent(
+            Reset(TextSearchBox1),
+            Set(_showMeetingTimes, false),
+            UpdateContext({_loadingMeetingTimes: true}),
+            Set(_selectedMeetingTime, Blank()),
+            Set(_selectedRoom, Blank()),
+            Set(_roomListSelected, false),
+            /*
+            Uses Office365 Outlook FindMeetingTimes operation to find available meeting times given various parameters including a semicolon separated list of attendee email addresses,
+            a meeting duration (in minutes), an acceptable start and end range to find the meeting.
+            Attendee emails are retrieved from the MyPeople collection. Duration and Start/End are retrieved from their respective dropdowns, where Start is set to 8:00 AM on the date selected, and End is set to 5:00 PM on the date selected.
+            */
+            ClearCollect(MeetingTimes, AddColumns(Office365Outlook.FindMeetingTimes(
+            	{RequiredAttendees:Concat(MyPeople, UserPrincipalName & ";"), MeetingDuration:MeetingDurationSelect1.Selected.Minutes,
+            	Start:Text(DateAdd(MeetingDateSelect1.SelectedDate, 8, TimeUnit.Hours), DateTimeFormat.UTC), End:Text(DateAdd(MeetingDateSelect1.SelectedDate, 17, TimeUnit.Hours), DateTimeFormat.UTC),
+            	MaxCandidates:15, MinimumAttendeePercentage:1, IsOrganizerOptional: false, ActivityDomain: "Work"}).MeetingTimeSuggestions,
+            "StartTime", MeetingTimeSlot.Start.DateTime, "EndTime", MeetingTimeSlot.End.DateTime))
+            );
+            UpdateContext({_loadingMeetingTimes: false});
+            Set(_showMeetingTimes, true)
+        Size: =24
+        Tooltip: ="Select meeting date. Required for submission."
+        Visible: =_showDetails
+        Width: =Parent.Width / 2 - 55.5
+        X: =32
+        Y: =LblMeetingDate1.Y + LblMeetingDate1.Height + 6
+        ZIndex: =18
+
+    LblMeetingTime1 As label:
+        Size: =18
+        Text: ="*Duration"
+        Visible: =_showDetails
+        Width: =160
+        Wrap: =false
+        X: =Parent.Width / 2 + 18.5
+        Y: =RectHeaderSep1.Y + RectHeaderSep1.Height + 16
+        ZIndex: =19
+
+    MeetingDurationSelect1 As dropdown:
+        AccessibleLabel: =Self.Tooltip
+        DisplayMode: =If(IsEmpty(MyPeople), DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =55
+        Items: |-
+            =Table(             
+            {Name:Substitute("{0} hour(s)", "{0}", "0.5"), Minutes:30},             
+            {Name:Substitute("{0} hour(s)", "{0}", "1"), Minutes:60},             
+            {Name:Substitute("{0} hour(s)", "{0}", "1.5"), Minutes:90},             
+            {Name:Substitute("{0} hour(s)", "{0}", "2"), Minutes:120},             
+            {Name:Substitute("{0} hour(s)", "{0}", "2.5"), Minutes:150},             
+            {Name:Substitute("{0} hour(s)", "{0}", "3"), Minutes:180},             
+            {Name:Substitute("{0} hour(s)", "{0}", "3.5"), Minutes:210},             
+            {Name:Substitute("{0} hour(s)", "{0}", "4"), Minutes:240})
+        OnChange: =Select(MeetingDateSelect1)
+        Size: =21
+        Tooltip: ="Select meeting duration. Required for submission."
+        Visible: =_showDetails
+        Width: =Parent.Width / 2 - 55.5
+        X: =LblMeetingTime1.X
+        Y: =LblMeetingTime1.Y + LblMeetingTime1.Height + 6
+        ZIndex: =20
+
+    RectTimeSep1 As rectangle:
+        Height: =49
+        Visible: =_showDetails
+        Width: =Parent.Width
+        Y: =MeetingDurationSelect1.Y + MeetingDurationSelect1.Height + 16
+        ZIndex: =21
+
+    LblTimeHeader1 As label:
+        Height: =RectTimeSep1.Height
+        PaddingLeft: =0
+        Size: =18
+        Text: ="Time"
+        Visible: =_showDetails
+        Width: =Parent.Width - 37
+        Wrap: =false
+        X: =32
+        Y: =RectTimeSep1.Y
+        ZIndex: =22
+
+    iconTimesEmptyState1 As icon.Clock:
+        DisplayMode: ="DisplayMode.View"
+        Height: =50
+        Icon: =Icon.Clock
+        Visible: =( !_showMeetingTimes || CountRows(MeetingTimes) = 0 || IsEmpty(MyPeople) ) && _showDetails
+        Width: =50
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =FindMeetingTimesGallery1.Y + 81
+        ZIndex: =23
+
+    LblTimesEmptyState1 As label:
+        Align: =Align.Center
+        Height: =100
+        Size: =20.5
+        Text: =If(_loadingMeetingTimes, "Searching for open meeting times...", !_showMeetingTimes || IsEmpty(MyPeople), "Make a selection to view available times", CountRows(MeetingTimes) = 0, "No available times on selected date")
+        Visible: =( !_showMeetingTimes || CountRows(MeetingTimes) = 0 || IsEmpty(MyPeople) ) && _showDetails
+        Width: =493
+        X: =Parent.Width/2 - Self.Width / 2
+        Y: =iconTimesEmptyState1.Y + iconTimesEmptyState1.Height + 45
+        ZIndex: =24
+
+    FindMeetingTimesGallery1 As gallery.MeetingTimesGallery:
+        AccessibleLabel: ="Available time slots sorted by percentage of attendees available. User must select a time slot to send a meeting request. Time slot selection required for submission."
+        Height: =346
+        Items: =MeetingTimes
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =104
+        Visible: =_showMeetingTimes && _showDetails && !IsEmpty(MyPeople)
+        Width: =Parent.Width - Self.X * 2
+        Y: =LblTimeHeader1.Y + LblTimeHeader1.Height
+        ZIndex: =25
+
+        Separator3 As rectangle:
+            Height: =2
+            OnSelect: =Select(Parent)
+            Width: =FindMeetingTimesGallery1.TemplateWidth
+            Y: =FindMeetingTimesGallery1.TemplateHeight - 1
+            ZIndex: =1
+
+        Rectangle1 As rectangle:
+            BorderColor: =Title3.Color
+            BorderThickness: =If(ThisItem.StartTime = _selectedMeetingTime.StartTime, 4, 0)
+            Fill: =RGBA(0,0,0,0)
+            Height: =Parent.TemplateHeight - 4
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Title3)
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =2
+            ZIndex: =2
+
+        Title3 As label:
+            BorderColor: =Self.Color
+            FocusedBorderThickness: =2
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            OnSelect: |-
+                =Set(_selectedMeetingTime, ThisItem);
+                UpdateContext({_loadingRooms: true});
+                /*Collects user's tenant room lists (if any)*/
+                If(IsEmpty(RoomsLists),
+                 ClearCollect(RoomsLists, Office365Outlook.GetRoomLists().value));
+                /*If tenant has no room lists, retrieves all the tenant rooms, and then retrieves their availabilities for the selected meeting time*/
+                If(CountRows(RoomsLists) <= 1,
+                 Set(_noRoomLists, true);
+                 ClearCollect(AllRooms, Office365Outlook.GetRooms().value);
+                 Set(_allRoomsConcat, Concat(FirstN(AllRooms, 20), Address & ";"));
+                 ClearCollect(RoomTimeSuggestions, Office365Outlook.FindMeetingTimes({RequiredAttendees: _allRoomsConcat, MeetingDuration: MeetingDurationSelect1.Selected.Minutes,
+                   Start: _selectedMeetingTime.StartTime & "Z", End: _selectedMeetingTime.EndTime & "Z", MinimumAttendeePercentage: "1",
+                   IsOrganizerOptional: "false", ActivityDomain: "Unrestricted"}).MeetingTimeSuggestions);
+                 ClearCollect(AvailableRooms, AddColumns(AddColumns(Filter(First(RoomTimeSuggestions).AttendeeAvailability,
+                   Availability="Free"), "Address", Attendee.EmailAddress.Address), "Name", LookUp(AllRooms, Address = Attendee.EmailAddress.Address).Name));
+                 ClearCollect(AvailableRoomsOptimal, DropColumns(DropColumns(AvailableRooms, "Availability"), "Attendee")),
+                 Set(_roomListSelected, false));
+                UpdateContext({_loadingRooms: false})
+            Size: =18 * FindMeetingTimesGallery1.TemplateHeight / 104
+            TabIndex: =0
+            Text: =Text(DateAdd(DateTimeValue(ThisItem.StartTime), -TimeZoneOffset(), TimeUnit.Minutes), DateTimeFormat.ShortTime)
+            Width: =160
+            Wrap: =false
+            X: =37
+            Y: =5
+            ZIndex: =3
+
+        Subtitle1 As label:
+            Color: =ColorFade(Title3.Color, 0.20)
+            FocusedBorderThickness: =2
+            Height: =FindMeetingTimesGallery1.TemplateHeight - Self.Y - 5
+            OnSelect: =Select(Title3)
+            Size: =18 * FindMeetingTimesGallery1.TemplateHeight / 104
+            Text: |-
+                =If(ThisItem.Confidence = 100, "All attendees available", "Unable to attend: "               
+                 & Concat(Filter(ThisItem.AttendeeAvailability, Availability = "Busy" || Availability = "Oof"),               
+                   LookUp(MyPeople, UserPrincipalName = Attendee.EmailAddress.Address || Mail = Attendee.EmailAddress.Address).DisplayName, ", "))
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =FindMeetingTimesGallery1.TemplateWidth - Self.X - 10
+            X: =37
+            Y: =Title3.Y + Title3.Height + 2
+            ZIndex: =4
+
+    RectLocationSep1 As rectangle:
+        Height: =49
+        Visible: =_showDetails
+        Width: =Parent.Width
+        Y: =FindMeetingTimesGallery1.Y + FindMeetingTimesGallery1.Height
+        ZIndex: =26
+
+    LblLocationHeader1 As label:
+        Height: =RectTimeSep1.Height
+        PaddingLeft: =0
+        Size: =18
+        Text: ="Location"
+        Visible: =_showDetails
+        Width: =Parent.Width - Self.X
+        Wrap: =false
+        X: =32
+        Y: =RectLocationSep1.Y
+        ZIndex: =27
+
+    TextMeetingLocation1 As text:
+        AccessibleLabel: ="Add a location"
+        Default: =""
+        DisplayMode: =If(_showDetails && !IsBlank(_selectedMeetingTime), DisplayMode.Edit, DisplayMode.Disabled)
+        Height: =70
+        HintText: ="Add a location"
+        PaddingLeft: =90
+        Size: =21
+        Visible: =_showDetails
+        Width: =Parent.Width - 2 * Self.X
+        Y: =LblLocationHeader1.Y + LblLocationHeader1.Height
+        ZIndex: =28
+
+    RoomSearchIcon1 As icon.Search:
+        Color: =RGBA(191, 190, 190, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =Self.Width
+        Icon: =Icon.Search
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Tooltip: ="Search"
+        Visible: =_showDetails
+        Width: =TextMeetingLocation1.Height
+        X: =14
+        Y: =TextMeetingLocation1.Y
+        ZIndex: =29
+
+    RectSeparator1 As rectangle:
+        Height: =2
+        Visible: =_showDetails
+        Width: =Parent.Width
+        Y: =TextMeetingLocation1.Y + TextMeetingLocation1.Height
+        ZIndex: =30
+
+    RectSeparator21 As rectangle:
+        Height: =2
+        Visible: =_showDetails && _roomListSelected
+        Width: =Parent.Width
+        Y: =LblRoomListName1.Y + LblRoomListName1.Height
+        ZIndex: =31
+
+    LblRoomListName1 As label:
+        FontWeight: ="FontWeight.Semibold"
+        Height: =57
+        PaddingLeft: =0
+        Size: =18
+        Text: =_selectedRoomList
+        Visible: =_showDetails && _roomListSelected
+        Width: =Parent.Width - Self.X
+        Wrap: =false
+        X: =RoomsBackNav1.X + RoomsBackNav1.Width
+        Y: =TextMeetingLocation1.Y + TextMeetingLocation1.Height
+        ZIndex: =32
+
+    RoomsBackNav1 As icon.ChevronLeft:
+        Height: =57
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Set(_roomListSelected, false)
+        PaddingBottom: =15
+        PaddingLeft: =15
+        PaddingRight: =15
+        PaddingTop: =15
+        TabIndex: =0
+        Tooltip: ="return to previous list"
+        Visible: =_roomListSelected && _showDetails
+        Width: =57
+        Y: =LblRoomListName1.Y
+        ZIndex: =33
+
+    iconRoomsEmptyState1 As icon.Waypoint:
+        DisplayMode: ="DisplayMode.View"
+        Height: =50
+        Icon: =Icon.Waypoint
+        Visible: =Or(_showDetails && Or(IsBlank(_selectedMeetingTime), _loadingRooms), CountRows(AvailableRoomsOptimal) = 0 && Or(_noRoomLists, _roomListSelected))
+        Width: =50
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =RoomBrowseGallery1.Y + 81
+        ZIndex: =34
+
+    LblRoomsEmptyState1 As label:
+        Align: =Align.Center
+        Height: =74
+        Size: =20.5
+        Text: =If(_loadingRooms, "Gathering available rooms...", IsBlank(_selectedMeetingTime), "Select a time to view available locations", CountRows(AvailableRoomsOptimal) = 0, "No rooms available at that time.")
+        Visible: =Or(_showDetails && Or(IsBlank(_selectedMeetingTime), _loadingRooms), CountRows(AvailableRoomsOptimal) = 0 && Or(_noRoomLists, _roomListSelected))
+        Width: =493
+        X: =Parent.Width/2 - Self.Width / 2
+        Y: =iconRoomsEmptyState1.Y + iconRoomsEmptyState1.Height + 45
+        ZIndex: =35
+
+    RoomBrowseGallery1 As gallery.RoomsListVariant:
+        Height: =Parent.Height - Self.Y
+        Items: =Search(If(_roomListSelected || _noRoomLists, AvailableRoomsOptimal, RoomsLists), Trim(TextMeetingLocation1.Text), "Name", "Address")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =104
+        Visible: =_showDetails && !IsBlank(_selectedMeetingTime) && !_loadingRooms
+        Width: =Parent.Width - Self.X*2
+        Y: =If(_roomListSelected, LblRoomListName1.Y + LblRoomListName1.Height, RectSeparator1.Y + RectSeparator1.Height)
+        ZIndex: =36
+
+        Rectangle2 As rectangle:
+            BorderColor: =Title4.Color
+            BorderThickness: =If(ThisItem.Address = _selectedRoom.Address, 4, 0)
+            Fill: =RGBA(0,0,0,0)
+            Height: =Parent.TemplateHeight - 4
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Title4)
+            Width: =Parent.TemplateWidth - 4
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+        Title4 As label:
+            BorderColor: =Self.Color
+            FocusedBorderThickness: =2
+            FontWeight: =If(!_roomListSelected, FontWeight.Semibold, FontWeight.Normal)
+            OnSelect: |-
+                =/*If user is viewing room lists, then retrieves the availabilities for the rooms within that list during the selected meeting time
+                If user is viewing rooms, selects that room*/               
+                UpdateContext({_loadingRooms: true});                   
+                If(!_roomListSelected && !_noRoomLists,                   
+                 Set(_roomListSelected, true);                   
+                 Set(_selectedRoomList, ThisItem.Name);                   
+                 ClearCollect(AllRooms, Office365Outlook.GetRoomsInRoomList(ThisItem.Address).value);                   
+                 Set(_allRoomsConcat, Concat(FirstN(AllRooms, 20), Address & ";"));                   
+                 ClearCollect(RoomTimeSuggestions, Office365Outlook.FindMeetingTimes({RequiredAttendees: _allRoomsConcat, MeetingDuration: MeetingDurationSelect1.Selected.Minutes,                   
+                   Start: _selectedMeetingTime.StartTime & "Z", End: _selectedMeetingTime.EndTime & "Z", MinimumAttendeePercentage: "1",                   
+                   IsOrganizerOptional: "false", ActivityDomain: "Unrestricted"}).MeetingTimeSuggestions);                   
+                 ClearCollect(AvailableRooms, AddColumns(AddColumns(Filter(First(RoomTimeSuggestions).AttendeeAvailability, Availability = "Free"),                   
+                   "Address", Attendee.EmailAddress.Address), "Name", LookUp(AllRooms, Address = Attendee.EmailAddress.Address).Name));                   
+                 ClearCollect(AvailableRoomsOptimal, DropColumns(DropColumns(AvailableRooms, "Availability"), "Attendee")),                   
+                 Set(_selectedRoom, ThisItem)                   
+                );                   
+                UpdateContext({_loadingRooms: false})
+            Size: =18 * RoomBrowseGallery1.TemplateHeight / 104
+            TabIndex: =0
+            Text: =ThisItem.Name
+            Width: =RoomBrowseGallery1.TemplateWidth - Self.X * 2 - 50
+            Wrap: =false
+            X: =37
+            Y: =RoomBrowseGallery1.TemplateHeight / 2 - Self.Height / 2
+            ZIndex: =2
+
+        iconAdd1 As icon.ChevronRight:
+            Height: =Self.Width
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Title4)
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =!_roomListSelected && !_noRoomLists
+            Width: =64 * RoomBrowseGallery1.TemplateHeight / 150
+            X: =RoomBrowseGallery1.TemplateWidth - Self.Width - 10
+            Y: =RoomBrowseGallery1.TemplateHeight / 2 - Self.Height / 2
+            ZIndex: =3
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =RoomBrowseGallery1.TemplateWidth
+            Y: =RoomBrowseGallery1.TemplateHeight - Self.Height
+            ZIndex: =4
+
+    PeopleBrowseGallery1 As gallery.PeoplePickerGallerySmallMeetingVariant:
+        AccessibleLabel: ="User look up search results"
+        BorderThickness: =If(Len(Trim(TextSearchBox1.Text)) > 0, 2, 0)
+        Fill: =TextSearchBox1.Fill
+        Height: =If(Len(Trim(TextSearchBox1.Text)) > 0, Parent.Height - Self.Y - 10, 0)
+        Items: |-
+            =/*Only use Office 365 Users operation if user has started searching*/
+            If(!IsBlank(Trim(TextSearchBox1.Text)), Office365Users.SearchUser({searchTerm: Trim(TextSearchBox1.Text), top: 15}))
+        Layout: =Layout.Vertical
+        TemplateSize: =104
+        Visible: =!_showDetails && Len(Trim(TextSearchBox1.Text)) > 0
+        Width: =Parent.Width - Self.X * 2
+        X: =32
+        Y: =TextSearchBox1.Y + TextSearchBox1.Height
+        ZIndex: =37
+
+        Rectangle3 As rectangle:
+            BorderColor: =Title5.Color
+            BorderThickness: =If(ThisItem.UserPrincipalName in MyPeople.UserPrincipalName, 4, 0)
+            Fill: =RGBA(0,0,0,0)
+            Height: =Parent.TemplateHeight
+            HoverFill: =RGBA(0,0,0,0)
+            OnSelect: =Select(Title5)
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+        Title5 As label:
+            BorderColor: =Self.Color
+            FocusedBorderThickness: =2
+            FontWeight: =FontWeight.Semibold
+            Height: =PeopleBrowseGallery1.TemplateHeight * 0.35
+            OnSelect: |-
+                =Concurrent(
+                Reset(TextSearchBox1),
+                Set(_selectedUser, ThisItem),
+                If(Not(ThisItem.UserPrincipalName in MyPeople.UserPrincipalName), 
+                	Collect(MyPeople, ThisItem); 
+                	Concurrent(
+                	Set(_showMeetingTimes, false),
+                	UpdateContext({_loadMeetingTimes: true}),
+                	Set(_selectedMeetingTime, Blank()),
+                	Set(_selectedRoom, Blank()),
+                	Set(_roomListSelected, false),
+                /*
+                Uses Office365 Outlook FindMeetingTimes operation to find available meeting times given various parameters including a semicolon separated list of attendee email addresses,
+                a meeting duration (in minutes), an acceptable start and end range to find the meeting.
+                Attendee emails are retrieved from the MyPeople collection. Duration and Start/End are retrieved from their respective dropdowns, where Start is set to 8:00 AM on the date selected, and End is set to 5:00 PM on the date selected.
+                */
+                	ClearCollect(MeetingTimes, AddColumns(Office365Outlook.FindMeetingTimes(
+                		{RequiredAttendees:Concat(MyPeople, UserPrincipalName & ";"), MeetingDuration:MeetingDurationSelect1.Selected.Minutes,
+                		Start:Text(DateAdd(MeetingDateSelect1.SelectedDate, 8, TimeUnit.Hours), DateTimeFormat.UTC), End:Text(DateAdd(MeetingDateSelect1.SelectedDate, 17, TimeUnit.Hours), DateTimeFormat.UTC),
+                		MaxCandidates:15, MinimumAttendeePercentage:1, IsOrganizerOptional: false, ActivityDomain: "Work"}).MeetingTimeSuggestions,
+                	"StartTime", MeetingTimeSlot.Start.DateTime, "EndTime", MeetingTimeSlot.End.DateTime))
+                	);
+                UpdateContext({_loadingMeetingTimes: false});
+                Set(_showMeetingTimes, true)
+                ))
+            Size: =21 * PeopleBrowseGallery1.TemplateHeight / 104
+            TabIndex: =0
+            Text: =ThisItem.DisplayName
+            Width: =PeopleBrowseGallery1.TemplateWidth - Self.X - 20
+            Wrap: =false
+            X: =16
+            Y: =0.1 * PeopleBrowseGallery1.TemplateHeight
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Color: =ColorFade(Title5.Color, 0.20)
+            FocusedBorderThickness: =2
+            Height: =PeopleBrowseGallery1.TemplateHeight * 0.35
+            OnSelect: =Select(Title5)
+            Size: =18 * PeopleBrowseGallery1.TemplateHeight / 104
+            Text: =ThisItem.UserPrincipalName
+            Width: =Title5.Width
+            Wrap: =false
+            X: =Title5.X
+            Y: =0.9 * PeopleBrowseGallery1.TemplateHeight - Self.Height
+            ZIndex: =3
+
+        Separator5 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    IconBack As icon.Send:
+        AccessibleLabel: =Self.Tooltip
+        AutoDisableOnSelect: =false
+        DisabledFill: =RGBA(240, 240, 240, 0.5)
+        Height: =88
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(ScreenMain,ScreenTransition.CoverRight)
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        TabIndex: =0
+        Tooltip: ="Back"
+        Width: =88
+        ZIndex: =38
+

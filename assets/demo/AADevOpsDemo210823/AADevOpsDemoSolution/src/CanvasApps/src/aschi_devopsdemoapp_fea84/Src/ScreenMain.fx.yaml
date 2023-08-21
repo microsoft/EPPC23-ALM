@@ -1,0 +1,129 @@
+ScreenMain As screen:
+
+    BadgeUser As Badge:
+        Content: ="AA"
+        DisplayMode: =DisplayMode.Edit
+        Height: =54
+        Width: =51
+        X: =573
+        Y: =15
+        ZIndex: =1
+
+    "GalleryTasks As gallery.'BrowseLayout_Flexible_NewsFeed_ver5.0'":
+        DelayItemLoading: =true
+        Items: =Filter(Activities, 'Activities (Views)'.'My Activities')
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Y: =183
+        ZIndex: =1
+
+        Title2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Subject
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - ImageSource.Width - 80
+            X: =32
+            Y: =32
+            ZIndex: =1
+
+        Body2 As label:
+            AutoHeight: =true
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Activity
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =32
+            Y: =Title2.Y + Title2.Height + 8
+            ZIndex: =2
+
+        ImageSource As image:
+            Height: =26
+            Image: ='Microsoft_Power_Platform_Icons_PowerApps - Copy'
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Tooltip: ="Source"
+            Width: =30
+            X: =604
+            Y: =6
+            ZIndex: =3
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Max(Parent.TemplateHeight - 1, Body2.Y + Body2.Height + 10)
+            ZIndex: =4
+
+        "ProgressTaskProgress As 'Progress Bar'":
+            DisplayMode: =DisplayMode.Edit
+            Height: =25
+            Width: =114
+            X: =468
+            Y: =7
+            ZIndex: =5
+
+        IconMarkComplete As icon.CheckBadge:
+            Height: =41
+            Icon: =Icon.CheckBadge
+            OnSelect: =Select(Parent)
+            Tooltip: ="Mark complete"
+            Width: =27
+            X: =604
+            Y: =59
+            ZIndex: =6
+
+        IconMarkDetails As icon.CheckBadge:
+            Height: =41
+            Icon: =Icon.View
+            OnSelect: |-
+                =Select(Parent);Navigate(ScreenTaskDetails,ScreenTransition.Cover,{TaskId: ThisItem.Activity})
+            Tooltip: ="Details"
+            Width: =27
+            X: =562
+            Y: =59
+            ZIndex: =7
+
+    RectangleTitle As rectangle:
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =49
+        Width: =640
+        Y: =134
+        ZIndex: =2
+
+    LabelTitle As label:
+        Color: =RGBA(241, 244, 249, 1)
+        Height: =49
+        Size: =21
+        Text: ="My Open Tasks"
+        Width: =640
+        Y: =134
+        ZIndex: =3
+
+    TextCanvasTitle As Text:
+        Alignment: ='TextCanvas.Alignment'.Center
+        DisplayMode: =DisplayMode.Edit
+        Height: =33
+        Size: =24
+        Text: ="Power Tasks"
+        Width: =258
+        X: =0
+        Y: =25
+        ZIndex: =4
+

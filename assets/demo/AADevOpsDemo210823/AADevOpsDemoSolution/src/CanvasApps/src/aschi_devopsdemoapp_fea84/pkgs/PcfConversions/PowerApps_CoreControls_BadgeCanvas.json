@@ -1,0 +1,20 @@
+{
+  "Name": "PowerApps_CoreControls_BadgeCanvas",
+  "PcfConversions": [
+    {
+      "Action": [
+        {
+          "Name": "ThemeColor",
+          "Type": "add"
+        },
+        {
+          "Name": "Shape",
+          "Type": "add"
+        }
+      ],
+      "From": "0.0.6",
+      "To": "0.0.7"
+    }
+  ],
+  "Version": "0.0.7"
+}

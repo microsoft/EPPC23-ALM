@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>aschi_devopsdemoapp_fea84</Name>
+  <AppVersion>2023-07-13T10:23:12Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.23071.11.0</CreatedByClientVersion>
+  <MinClientVersion>3.23071.11.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"20230711T123706Z-3.23064.16.0","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.23071.11","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","optimizedForTeamsMeeting":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>DevOps Demo App</DisplayName>
+  <Description>Added task details screen</Description>
+  <CommitMessage>Saved by Test Studio</CommitMessage>
+  <Publisher></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"2798af7f-2531-4718-831f-6cb92c4fbf31":{"id":"/providers/microsoft.powerapps/apis/shared_office365","displayName":"Office 365 Outlook","iconUri":"https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png","dataSources":["Office365Outlook"],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"apiTier":"Standard","actions":["CalendarGetTables","V2CalendarPostItem","FindMeetingTimes","GetRoomLists","GetRooms","GetRoomsInRoomList"],"endpoints":[]},"ae928b5b-374e-4cbe-83bc-2d02d19020e0":{"id":"/providers/microsoft.powerapps/apis/shared_office365users","displayName":"Office 365 Users","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1644/1.0.1644.3342/office365users/icon.png","dataSources":["Office365Users"],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"apiTier":"Standard","actions":["SearchUser"],"endpoints":[]}}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"Environmental","environmentName":"default.cds"},"dataSources":{"Activities":{"entitySetName":"activitypointers","logicalName":"activitypointer"},"Tasks":{"entitySetName":"tasks","logicalName":"task"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"activitypointer","componenttype":1},{"logicalname":"task","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/aschi_devopsdemoapp_fea84_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/aschi_devopsdemoapp_fea84_DocumentUri.msapp</DocumentUri>
+</CanvasApp>
